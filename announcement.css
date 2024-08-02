@@ -16,7 +16,18 @@ body {
     padding: 10px;
     z-index: 4;
 }
+.our_ig {
 
+    font-family: "Josefin Slab", serif;
+    font-size: 30px;
+    font-optical-sizing: auto;
+    text-align: center;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    z-index: 10;
+    
+}
 .back a {
     color: white;
     text-decoration: none;
