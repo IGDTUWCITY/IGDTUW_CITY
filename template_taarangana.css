@@ -5,13 +5,13 @@ body, html {
     height: 100%;
     font-family: kalam,'Merriweather', serif; /* Default font */
     color: black;
-    background: url('bg1.jpg') no-repeat center center fixed;
+    background: url('bg.jpeg') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    
+    text-size-adjust: 2900px;
 }
 
 header {
@@ -42,7 +42,6 @@ header {
 .nav-buttons {
     position: absolute;
     top: 10px;
-    
     display: flex;
     gap: 10px;
 }
@@ -89,7 +88,7 @@ main {
     padding: 20px;
     width: 100%;
     max-width: 1200px;
-    background-color: rgb(255, 255, 0,0.5);
+    background-color: rgba(255, 255, 0, 0.5);
     border-radius: 10px;
     margin-top: 250px; /* Ensure the main content doesn't overlap the header */
     margin-bottom: 50px;
@@ -101,18 +100,15 @@ main {
 
 #glimpses h2 {
     font-family: 'Kalam', cursive; /* Font for subheadings */
-    font-size: 2em;
-    color: rgb(28, 0, 107); /* Golden yellow */
-    margin-bottom: 20px;
+    font-size: 4em;
+    color: rgb(28, 0, 107); /* Color for subheadings */
     animation: slideIn 2s forwards;
+    margin-bottom: 10px; /* Reduce the bottom margin */
 }
 
-#description h2 {
-    font-family: 'Kalam', cursive; /* Font for subheadings */
-    font-size: 2em;
-    color: rgb(28, 0, 107); /* Golden yellow */
-    margin-bottom: 20px;
-    animation: slideIn 2s backwards;
+.image-gallery figure {
+    margin-top: 0; /* Remove top margin */
+    padding: 0; /* Remove padding if any */
 }
 
 @keyframes slideIn {
@@ -142,18 +138,30 @@ main {
 }
 
 #description {
-    margin: 20px 0;
+    margin: 2px 0;
+}
+
+#description h2 {
+    font-family: 'Kalam', cursive; /* Font for subheadings */
+    font-size: 4em;
+    color: rgb(28, 0, 107); /* Color for subheadings */
+    animation: slideIn 2s backwards;
+    margin-bottom: 10px; /* Reduce the bottom margin */
 }
 
 #description p {
-    font-size: 1.2em;
-    line-height: 1.5;
+    
+    
+    font-size: 1.5; /* Increased font size for all paragraphs */
+    line-height: 1.6; /* Improved readability */
 }
 
-
+p {
+    font-size: 1.5em; /* Increased font size for all paragraphs */
+    line-height: 1.6; /* Improved readability */
+}
 
 .our_ig {
-
     font-family: "Josefin Slab", serif;
     font-size: 30px;
     font-optical-sizing: auto;
@@ -162,5 +170,4 @@ main {
     color: rgb(255, 255, 255);
     background-color: black;
     z-index: 10;
-    
 }
