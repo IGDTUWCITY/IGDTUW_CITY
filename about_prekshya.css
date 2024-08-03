@@ -1,0 +1,152 @@
+.heading {
+    position: relative;
+    padding: 100px 0;
+    background-image: url("prekshya_about.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    overflow: hidden;
+}
+
+.heading::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+h2 {
+    position: relative;
+    text-shadow: 0 0 5px #fff,
+                 0 0 10px #cef86d,
+                 0 0 20px rgb(205, 239, 57),
+                 0 0 30px rgb(191, 214, 92),
+                 0 0 40px rgb(215, 243, 95),
+                 0 0 55px rgb(208, 255, 0),
+                 0 0 70px rgb(202, 230, 82);
+    color: whitesmoke;
+    text-align: center;
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+    z-index: 2;
+}
+
+h4 {
+    position: relative;
+    color: grey;
+    text-shadow: 0 0 5px #fff,
+                 0 0 10px #fff,
+                 0 0 20px rgb(26, 224, 227),
+                 0 0 30px rgb(26, 224, 227),
+                 0 0 40px rgb(26, 224, 227),
+                 0 0 55px rgb(26, 224, 227),
+                 0 0 70px rgb(26, 224, 227);
+    font-size: 30px;
+    padding: 0;
+    font-family: "Kalam", cursive;
+    text-align: center;
+    z-index: 2;
+}
+
+.logo {
+    position: absolute;
+    z-index: 3;
+}
+
+#Primarygoal {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Kalam", cursive;
+}
+
+#Primarygoal h1 {
+    color: darkblue;
+    font-family: "Bungee Shade", sans-serif;
+    font-size: 40px;
+}
+
+#Description {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#Description h1 {
+    color: darkblue;
+    font-family: "Bungee Shade", sans-serif;
+    font-size: 40px;
+}
+
+#Contactus {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#Contactus h1 {
+    color: darkblue;
+    font-family: "Bungee Shade", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    margin-left: 30px;
+    color: antiquewhite;
+}
+
+.titles {
+    margin-top: 0.1%;
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.titles:hover {
+    color: #40ffd6;
+}
+
+#P:hover, #D:hover, #C:hover {
+    text-shadow: 0 0 0.5px #d2dff2,
+                 0 0 1px #fff,
+                 0 0 2px rgb(26, 224, 227),
+                 0 0 3px rgb(26, 224, 227),
+                 0 0 4px rgb(26, 224, 227),
+                 0 0 5px rgb(26, 224, 227),
+                 0 0 7px rgb(26, 224, 227);
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1520052205864-92d242b3a76b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3wxNjQ3ODE4fHxlbnwwfHx8fHw%3D);
+    background-position: center;
+    background-size: cover;
+    z-index: 3;
+}
+
+.back {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: larger;
+    padding: 0px;
+}
+
+.our_ig {
+    font-family: "Josefin Slab", serif;
+    font-size: 30px;
+    font-optical-sizing: auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.5); 
+}
