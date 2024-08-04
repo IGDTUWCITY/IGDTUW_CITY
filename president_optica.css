@@ -176,3 +176,9 @@ h3 {
     color: rgb(255, 255, 255);
     background-color: black;
 }
+.logo {
+    top: 70px;
+    left: 13px;
+    position: absolute;
+    z-index: 4;
+}
