@@ -1,10 +1,10 @@
 .heading{
     position: relative;
     padding: 100px 0;
-    background-image: url("/images/assertmerkle/WhatsApp\ Image\ 2024-07-26\ at\ 12.33.41\ PM.jpeg");
+    background-image: url("about_hypnotics.jpeg");
 background-size: cover;
 
-background-position: center 50%; /* This line is changed */
+background-position: center 53%; /* This line is changed */
 height: 300px; /* Add a fixed height */
 overflow: hidden; /* Hide any overflow */
     
