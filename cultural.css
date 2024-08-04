@@ -1,6 +1,6 @@
 body {
-    font-family: 'Kalam', cursive;
-    background: url('social_environmental_bg.webp') no-repeat center center fixed;
+    font-family: "Kalam", cursive;
+    background: url('cultural.gif') no-repeat center center fixed;
     background-size: cover;
     color: #333;
     margin: 0;
@@ -22,19 +22,21 @@ body {
 }
 
 h1 {
-    color: #48f1eb; /* Hot pink color */
+
+    color: #39FF14; /* Neon green color */
     font-size: 2.5em;
     margin-bottom: 20px;
     text-shadow: 0 0 5px #15080f, 0 0 10px #000000, 0 0 15px #1a1015, 0 0 20px #1a1518, 0 0 25px #0d0408;
+    -webkit-text-stroke: 1px #000000; /* Thin black outline */
     animation: glow 1.5s infinite alternate;
 }
 
 @keyframes glow {
     from {
-        text-shadow: 0 0 5px #69f5ff, 0 0 10px #69f5ff, 0 0 15px #69f5ff, 0 0 20px #69f5ff, 0 0 25px #69f5ff;
+        text-shadow: 0 0 5px #39FF14, 0 0 10px #39FF14, 0 0 15px #39FF14, 0 0 20px #39FF14, 0 0 25px #39FF14;
     }
     to {
-        text-shadow: 0 0 10px #0f040a, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000, 0 0 50px #000;
+        text-shadow: 0 0 10px #39FF14, 0 0 20px #39FF14, 0 0 30px #39FF14, 0 0 40px #39FF14, 0 0 50px #39FF14;
     }
 }
 
@@ -44,21 +46,22 @@ h1 {
     padding: 0;
 }
 
-.societies-list li  {
-    background: #69f5ff;
+.societies-list li  { 
+    background: #39FF14; /* Neon green color */
     border-radius: 5px;
-    color: #fff;
+    color: rgb(3, 2, 2);
     margin: 10px 0;
     padding: 15px;
     transition: background 0.3s, transform 0.3s;
 }
 
 .societies-list li:hover {
-    background: #ff1493;
+    background: #0056b3;
     cursor: pointer;
     transform: scale(1.05);
 }
 a{
     text-decoration: none;
-    color:rgb(98, 0, 255);
+    color: rgb(3, 2, 2);
+    border-radius: 5px;
 }
