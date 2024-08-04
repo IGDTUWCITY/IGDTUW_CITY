@@ -167,6 +167,12 @@ h3 {
     text-decoration: none;
     word-spacing: 10px;
 }
+.logo {
+    top: 70px;
+    left: 13px;
+    position: absolute;
+    z-index: 4;
+}
 
 .our_ig {
     font-family: "Josefin Slab", serif;
