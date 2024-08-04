@@ -54,11 +54,11 @@ h1 {
 }
 
 .societies-list li:hover {
-    background: #ff1493;
+    background: #026ae9;
     cursor: pointer;
     transform: scale(1.05);
 }
 a{
     text-decoration: none;
-    color:rgb(98, 0, 255);
+    color:rgb(10, 0, 149);
 }
