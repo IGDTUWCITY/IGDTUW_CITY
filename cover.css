@@ -48,17 +48,17 @@ body, html {
 }
 
 .heading:hover {
-    text-shadow: 0 0 10px #3333ee, 0 0 20px #3333ee, 0 0 30px #3333ee;
-    color: #0000ff;
+    text-shadow: 0 0 10px #050550;, 0 0 20px #050550;, 0 0 30px #050550;;
+    color: #050550;;
     animation: glow 1.5s infinite alternate;
 }
 
 @keyframes glow {
     from {
-        text-shadow: 0 0 10px #3333ee, 0 0 20px #3333ee, 0 0 30px #3333ee;
+        text-shadow: 0 0 10px #050550;, 0 0 20px #050550;, 0 0 30px #050550;;
     }
     to {
-        text-shadow: 0 0 20px #3333ee, 0 0 30px #3333ee, 0 0 40px #3333ee;
+        text-shadow: 0 0 20px ##050550;, 0 0 30px #050550;, 0 0 40px #050550;;
     }
 }
 
