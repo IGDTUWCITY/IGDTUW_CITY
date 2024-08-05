@@ -20,7 +20,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("template.png");
+    background-image: url("template_hackclub.png");
 
     background-size: contain;
     background-position: center 75%;
