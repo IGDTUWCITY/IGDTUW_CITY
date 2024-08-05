@@ -166,6 +166,16 @@ h1 {
 
 
 }
+.parent2 {
+    position: relative;
+  
+      /* justify-content: center;
+      align-items: center; */
+      margin-top: 50px;
+      /* Optional: adjust as needed */
+  /* background-color: azure; */
+  
+  }
 
 .content {
     margin-top: 40%;
@@ -186,7 +196,7 @@ h1 {
     margin-top: 18%;
     margin-left: 35%;
     position: absolute;
-    top: 90px;
+    top: 110px;
     left: 60px;
     width: 300px;
     /* Adjust the size as needed */
@@ -200,6 +210,37 @@ h1 {
     transition: box-shadow 0.3s ease-in-out;
 }
 
+.photo2 {
+/* .image{border-collapse:collapse;}
+.image td{padding:0} */
+/* border-collapse: collapse;
+padding-bottom: 0%;
+display: block; */
+margin:0%;
+    /* margin-top: 0%; */
+    /* margin-bottom: 10px;
+    margin-left: 40%; */
+    position:absolute ;
+    top: 20px;
+    left: 600px;
+    width: 300px;
+    /* Adjust the size as needed */
+    height: auto;
+    border-radius: 200px;
+    /* Optional: rounded corners */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5),
+        0 0 30px rgba(255, 255, 255, 0.5),
+        0 0 45px rgba(255, 255, 255, 0.5),
+        0 0 60px rgba(255, 255, 255, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.photo2:hover {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.8),
+        0 0 50px rgba(255, 255, 255, 0.8),
+        0 0 75px rgba(255, 255, 255, 0.8),
+        0 0 100px rgba(255, 255, 255, 0.8);
+}
 /* Optional: Add hover effect for a dynamic glow */
 .photo:hover {
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.8),
@@ -265,6 +306,7 @@ h3 {
     color:rgb(255, 255, 255);
     background-color: black;
 }
+
 
 .content h2:hover span:nth-child(1) {
     animation-delay: 0.1s;
