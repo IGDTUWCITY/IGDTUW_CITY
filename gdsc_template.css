@@ -20,7 +20,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("template_gdsc.jpeg");
+    background-image: url("gdsc_template.jpeg");
 
     background-size: cover;
     background-position: center 75%;
