@@ -23,7 +23,7 @@ body::before {
     background-image: url("gdsc_template.jpeg");
 
     background-size: cover;
-    background-position: center 75%;
+    background-position: center 50%;
     opacity: 0.4;
 
     /* Adjust opacity as needed */
