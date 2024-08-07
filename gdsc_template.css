@@ -156,7 +156,7 @@ a:hover {
 
     .top-links {
         padding: 10px 20px; /* Adjust padding as needed */
-        margin-top: 50px; /* Distance from the logo */
+        margin-left: 50px; /* Distance from the logo */
         position: relative; /* Ensure it respects the space given by margin-top */
     }
 
