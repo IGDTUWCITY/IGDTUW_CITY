@@ -1,8 +1,9 @@
 .heading{
-    position: relative;
+     position: relative;
     padding: 100px 0;
-    background-image: url("bhav_about.png");
-background-size: contain;
+    background-image: url("bhav_about.jpeg");
+background-size: cover;
+
 
 background-position: center 80%; /* This line is changed */
 height: 300px; /* Add a fixed height */
