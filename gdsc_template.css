@@ -149,7 +149,20 @@ a:hover {
 @media screen and (max-width: 480px) {
     .logo {
         width: 30px; /* Logo width for mobile devices */
-        right: 3px;
+        position: absolute; /* Ensure the logo stays fixed */
+        top: 10px; /* Distance from the top of the viewport */
+        left: 10px; /* Adjust the position of the logo horizontally */
+    }
+
+    .top-links {
+        padding: 10px 20px; /* Adjust padding as needed */
+        margin-top: 50px; /* Distance from the logo */
+        position: relative; /* Ensure it respects the space given by margin-top */
+    }
+
+    .nav-link {
+        display: block; /* Ensure links stack vertically */
+        margin: 5px 0; /* Vertical margin to separate links */
     }
 
     .startingtext {
