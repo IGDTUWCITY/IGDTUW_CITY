@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden;
     position: relative;
 }
 
@@ -16,21 +16,23 @@ body::before {
     background-size: cover;
     background-position: center 75%;
     opacity: 0.4;
-    z-index: -1; /* Ensure it stays behind all content */
+    z-index: -1;
 }
 
 .top-links {
+    top: 0;
+    right: 0;
     background-color: black;
     opacity: 0.65;
-    padding: 20px 5%;
+    padding: 20px;
     width: 100%;
     text-align: center;
-    position: relative;
+    position: absolute;
     z-index: 2;
     font-family: "Special Elite", system-ui;
     font-weight: 400;
     font-style: normal;
-    box-sizing: border-box; /* Ensure padding and width are calculated correctly */
+    box-sizing: border-box;
 }
 
 .nav-link {
@@ -38,12 +40,11 @@ body::before {
     color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: larger;
-    display: inline-block;
     margin: 0 10px;
 }
 
 .nav-link::after {
-    content: "\25BC"; /* Unicode for downward triangle */
+    content: "\25BC";
     font-size: 0.7em;
     margin-left: 5px;
 }
@@ -51,22 +52,17 @@ body::before {
 a:hover {
     color: rgb(95, 95, 229);
     text-decoration: underline;
-    font-size: 30px;
 }
 
 .startingtext {
     color: darkblue;
     font-size: 40px;
-    position: relative;
     font-family: "Kalam", cursive;
-    text-align: center; /* Center-align text */
+    text-align: center;
 }
 
 .startingtext h1 {
-    text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
-        1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
-        1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191,
-        1px 10px 1px #919191;
+    text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191;
 }
 
 .startingtext:hover {
@@ -77,40 +73,30 @@ a:hover {
 .startingtext p {
     color: yellow;
     font-size: larger;
-    text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
-        1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
-        1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191,
-        1px 10px 1px #919191;
+    text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191;
 }
 
 .startingtext h2 {
     color: maroon;
     font-size: 115px;
     font-style: italic;
-    margin-right: 2%;
-    text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
-        1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
-        1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191,
-        1px 10px 1px #919191;
+    text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191;
 }
 
 .logo {
     padding: 5px;
     position: absolute;
+    top: 0;
+    left: 0;
     z-index: 3;
-    top: 10px;
-    left: 10px;
-    width: 100px;
 }
 
 .our_ig {
     font-family: "Josefin Slab", serif;
     font-size: 30px;
-    font-optical-sizing: auto;
     text-align: center;
     color: rgb(255, 255, 255);
     background-color: black;
-    padding: 10px;
 }
 
 .back {
@@ -129,67 +115,59 @@ a:hover {
     word-spacing: 10px;
 }
 
-/* Media Queries */
-@media (max-width: 1200px) {
+/* Responsive Styles */
+@media (max-width: 768px) {
     .top-links {
-        padding: 20px 10%;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
     }
 
     .nav-link {
-        margin: 0 8px;
-        font-size: large;
+        display: block;
+        margin: 5px 0;
     }
 
-    .startingtext h2 {
-        font-size: 100px;
-    }
-}
-
-@media (max-width: 768px) {
     .logo {
         width: 80px;
-        top: 5px;
-        left: 5px;
-    }
-
-    .top-links {
-        padding: 15px 5%;
-    }
-
-    .nav-link {
-        margin: 0 5px;
-        font-size: medium;
+        top: 10px;
+        left: 10px;
     }
 
     .startingtext {
-        font-size: 30px;
+        font-size: 24px;
+    }
+
+    .startingtext h1 {
+        font-size: 32px;
+    }
+
+    .startingtext p {
+        font-size: 20px;
     }
 
     .startingtext h2 {
-        font-size: 80px;
+        font-size: 60px;
     }
 }
 
 @media (max-width: 480px) {
     .logo {
-        width: 60px; /* Smaller logo size */
-        top: 5px;
-        left: 5px;
-    }
-
-    .top-links {
-        padding: 10px;
-        text-align: center; /* Ensure links are centered */
-    }
-
-    .nav-link {
-        display: block; /* Stack links vertically */
-        margin: 5px 0;
-        font-size: small;
+        width: 60px;
+        top: 10px;
+        left: 10px;
     }
 
     .startingtext {
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    .startingtext h1 {
+        font-size: 28px;
+    }
+
+    .startingtext p {
+        font-size: 16px;
     }
 
     .startingtext h2 {
