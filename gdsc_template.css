@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
     position: relative;
 }
 
@@ -12,26 +12,24 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("template_gdsc.png");
+    background-image: url("gdsc_template.jpeg");
     background-size: cover;
-    background-position: center 75%;
-    opacity: 0.4;
-    z-index: -1;
+    background-position: center 50%;
+    opacity: 0.4; /* Adjust opacity as needed */
+    z-index: -1; /* Ensure it stays behind all content */
 }
 
 .top-links {
-    top: 0;
-    right: 0;
     background-color: black;
     opacity: 0.65;
     padding: 20px;
-    width: 100%;
     text-align: center;
-    position: absolute;
+    position: relative;
     z-index: 2;
     font-family: "Special Elite", system-ui;
     font-weight: 400;
     font-style: normal;
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -40,11 +38,12 @@ body::before {
     color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: larger;
-    margin: 0 10px;
+    text-align: center;
+    margin: 0 20px;
 }
 
 .nav-link::after {
-    content: "\25BC";
+    content: "\25BC"; /* Unicode for downward triangle */
     font-size: 0.7em;
     margin-left: 5px;
 }
@@ -52,13 +51,14 @@ body::before {
 a:hover {
     color: rgb(95, 95, 229);
     text-decoration: underline;
+    font-size: 1.5em;
 }
 
 .startingtext {
     color: darkblue;
-    font-size: 40px;
+    font-size: 2.5em;
+    position: relative;
     font-family: "Kalam", cursive;
-    text-align: center;
 }
 
 .startingtext h1 {
@@ -67,36 +67,39 @@ a:hover {
 
 .startingtext:hover {
     transition: 1s;
-    font-size: 50px;
+    font-size: 3em;
 }
 
 .startingtext p {
     color: yellow;
     font-size: larger;
+    text-align: center;
     text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191;
 }
 
 .startingtext h2 {
     color: maroon;
-    font-size: 115px;
+    font-size: 3em;
+    text-align: right;
     font-style: italic;
+    margin-right: 2%;
     text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191;
 }
 
 .logo {
     padding: 5px;
     position: absolute;
-    top: 0;
-    left: 0;
     z-index: 3;
 }
 
 .our_ig {
     font-family: "Josefin Slab", serif;
-    font-size: 30px;
+    font-size: 1.5em;
+    font-optical-sizing: auto;
     text-align: center;
     color: rgb(255, 255, 255);
     background-color: black;
+    padding: 10px;
 }
 
 .back {
@@ -117,60 +120,24 @@ a:hover {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .top-links {
-        padding: 10px;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .nav-link {
         display: block;
-        margin: 5px 0;
+        margin: 10px 0;
     }
 
-    .logo {
-        width: 80px;
-        top: 10px;
-        left: 10px;
-    }
-
-    .startingtext {
-        font-size: 24px;
-    }
-
-    .startingtext h1 {
-        font-size: 32px;
-    }
-
-    .startingtext p {
-        font-size: 20px;
-    }
-
-    .startingtext h2 {
-        font-size: 60px;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo {
-        width: 60px;
-        top: 10px;
-        left: 10px;
+    .top-links {
+        padding: 20px;
     }
 
     .startingtext {
-        font-size: 18px;
-    }
-
-    .startingtext h1 {
-        font-size: 28px;
-    }
-
-    .startingtext p {
-        font-size: 16px;
+        font-size: 2em;
     }
 
     .startingtext h2 {
-        font-size: 50px;
+        font-size: 2em;
+    }
+
+    .our_ig {
+        font-size: 1.2em;
     }
 }
