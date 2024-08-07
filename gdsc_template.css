@@ -1,8 +1,3 @@
-/* .clickable{
-    cursor: pointer;
-    text-align: center;
-}  */
-
 body {
     padding: 0px;
     margin: 0px;
@@ -161,4 +156,68 @@ a:hover {
     color: white;
     text-decoration: none;
     word-spacing: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .top-links {
+        padding: 40px;
+        padding-left: 15%;
+        width: 100%;
+    }
+
+    .nav-link {
+        margin-left: 30px;
+        font-size: large;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 50px;
+    }
+
+    .top-links {
+        padding: 30px;
+        padding-left: 10%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-link {
+        margin-left: 20px;
+        font-size: medium;
+    }
+
+    .startingtext h2 {
+        font-size: 80px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 40px;
+    }
+
+    .top-links {
+        padding: 20px;
+        padding-left: 5%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-link {
+        margin-left: 10px;
+        font-size: small;
+    }
+
+    .startingtext {
+        font-size: 20px;
+    }
+
+    .startingtext h2 {
+        font-size: 50px;
+        text-align: center;
+    }
 }
