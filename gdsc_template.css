@@ -149,24 +149,28 @@ a:hover {
 @media screen and (max-width: 480px) {
     .logo {
         width: 30px; /* Logo width for mobile devices */
-        position: absolute; /* Ensure the logo stays fixed */
-        top: 10px; /* Distance from the top of the viewport */
-        left: 10px; /* Adjust the position of the logo horizontally */
+        position: absolute; /* Position logo absolutely */
+        top: 10px; /* Distance from the top */
+        left: 10px; /* Distance from the left */
+        z-index: 3; /* Ensure it stays above other elements if necessary */
     }
 
     .top-links {
-        padding: 10px 20px; /* Adjust padding as needed */
-        margin-left: 50px; /* Distance from the logo */
-        position: relative; /* Ensure it respects the space given by margin-top */
+        padding: 10px 20px; /* Padding for top links */
+        margin-top: 50px; /* Space between the logo and the top links */
+        position: relative; /* Ensures correct placement with respect to its parent */
+        text-align: center; /* Center align the links */
+        z-index: 2; /* Ensure it’s below the logo */
     }
 
     .nav-link {
-        display: block; /* Ensure links stack vertically */
-        margin: 5px 0; /* Vertical margin to separate links */
+        display: block; /* Stack links vertically */
+        margin: 5px 0; /* Vertical spacing between links */
     }
 
     .startingtext {
         font-size: 1.5em;
+        margin-top: 10px; /* Add space between the top links and the starting text */
     }
 
     .startingtext h2 {
@@ -176,4 +180,6 @@ a:hover {
     .our_ig {
         font-size: 1em;
     }
+}
+
 }
