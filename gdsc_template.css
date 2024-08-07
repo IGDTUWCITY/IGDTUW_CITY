@@ -146,9 +146,8 @@ a:hover {
     .our_ig {
         font-size: 1.2em;
     }
-
-    .logo {
-        width: 80px; /* Adjust logo size for tablets and smaller laptops */
+    .logo{
+        width: 80px;
     }
 }
 
@@ -159,5 +158,13 @@ a:hover {
 
     .startingtext {
         font-size: 1.5em;
+    }
+
+    .startingtext h2 {
+        font-size: 1.5em;
+    }
+
+    .our_ig {
+        font-size: 1em;
     }
 }
