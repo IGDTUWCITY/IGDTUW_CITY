@@ -39,7 +39,8 @@ body::before {
     font-weight: bold;
     font-size: larger;
     text-align: center;
-    margin: 0 20px;
+    display: block; /* Ensure links stack vertically */
+    margin: 5px 0; /* Vertical margin to separate links */
 }
 
 .nav-link::after {
@@ -89,6 +90,8 @@ a:hover {
 .logo {
     padding: 5px;
     position: absolute;
+    top: 5px; /* Ensure there is space between the top of the page and the logo */
+    left: 5px; /* Adjust if needed */
     z-index: 3;
 }
 
@@ -119,7 +122,7 @@ a:hover {
 }
 
 /* Responsive Styles */
-@media screen and(max-width: 720px) {
+@media screen and (max-width: 720px) {
     .nav-link {
         display: block;
         margin: 10px 0;
@@ -127,6 +130,7 @@ a:hover {
 
     .top-links {
         padding: 20px;
+        padding-top: 60px; /* Add padding to the top to avoid overlap with logo */
     }
 
     .startingtext {
@@ -139,5 +143,23 @@ a:hover {
 
     .our_ig {
         font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        width: 30px; /* Logo width for mobile devices */
+    }
+
+    .startingtext {
+        font-size: 1.5em;
+    }
+
+    .startingtext h2 {
+        font-size: 1.5em;
+    }
+
+    .our_ig {
+        font-size: 1em;
     }
 }
