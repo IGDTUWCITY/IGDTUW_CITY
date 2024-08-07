@@ -149,7 +149,7 @@ a:hover {
 @media screen and (max-width: 480px) {
     .logo {
         width: 30px; /* Logo width for mobile devices */
-        right: 20px;
+        right: 3px;
     }
 
     .startingtext {
