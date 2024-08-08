@@ -62,7 +62,7 @@ body::before {
     /* setting the position of the links */
     background-color: black;
     opacity: 0.65;
-    padding: 50px;
+    padding: 10px;
     padding-left: 50%;
     width: 120%;
     text-align: center;
@@ -183,7 +183,7 @@ a:hover {
 .logo {
     padding: 5px;
     position: absolute;
-    z-index: 4;
+    z-index: 5;
 }
 
 .our_ig{
