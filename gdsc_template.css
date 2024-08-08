@@ -7,7 +7,7 @@
 @media only screen and (max-width: 600px) {
  
   .top-links {
-    padding-top: 10px;
+    padding-top: 0px;
     flex-direction: column;
     align-items: center;
   }
@@ -15,6 +15,12 @@
     margin-left: 0;
     margin-bottom: 20px;
     margin-top: 0;
+  }
+  body::before {
+    background-image: url("template_gdsc.png");
+/*     background-size: cover; */
+    background-image: linear-gradient(to bottom, #f7f7f7, #fff);
+    background-size: 100% 100%;
   }
 }
 
