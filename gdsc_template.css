@@ -2,6 +2,18 @@
     cursor: pointer;
     text-align: center;
 }  */
+/* Add this media query to your CSS file */
+
+@media only screen and (max-width: 600px) {
+  .top-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-link {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+}
 
 body {
     padding: 0px;
