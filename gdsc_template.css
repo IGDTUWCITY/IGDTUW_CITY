@@ -52,7 +52,10 @@ body::before {
     /* position: absolute; */
     /* now , the links are taken out from the normal flow of the document, and it is non existent for other elements  */
     /* we can place this anywhere on the entire page,but in case of postion : relative , we are placing the element acc to its original position in the flow of document */
-    top: 0px;
+/*     top: 0px; */
+    display: flex; /* Add this to make the links display horizontally by default */
+    position: relative; /* Keep this to ensure the links are positioned relative to their parent */
+    z-index: 4; /* Increase the z-index to bring the links in front of the logo */
     /* moving 20 px down from top edge */
     right: 200px;
     /* moving 20 px right from the right edge */
@@ -64,7 +67,7 @@ body::before {
     width: 120%;
     text-align: center;
     position: relative;
-    z-index: 2;
+    padding-top: 100px;
     font-family: "Special Elite", system-ui;
     font-weight: 400;
     font-style: normal;
