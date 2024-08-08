@@ -372,3 +372,19 @@ h3 {
     font-size: 40px;
   }
 }
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 50px; /* decrease logo size */
+    height: 50px; /* make it a small square */
+    margin: 10px; /* add some margin to prevent overlapping */
+  }
+
+  .content h2 {
+    font-size: 24px; /* decrease heading size */
+  }
+
+  .h::before {
+    height: calc(100% + 20px); /* decrease background height */
+    top: -20px; /* adjust background position */
+  }
+}
