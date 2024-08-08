@@ -374,8 +374,8 @@ h3 {
 }
 @media only screen and (max-width: 600px) {
   .logo {
-    width: 50px; /* decrease logo size */
-    height: 50px; /* make it a small square */
+    width: 30px; /* decrease logo size */
+    height: 30px; /* make it a small square */
     margin: 10px; /* add some margin to prevent overlapping */
   }
 
@@ -384,7 +384,7 @@ h3 {
   }
 
   .h::before {
-    height: calc(100% + 20px); /* decrease background height */
+    height: calc(100% + 15px); /* decrease background height */
     top: -20px; /* adjust background position */
   }
 }
