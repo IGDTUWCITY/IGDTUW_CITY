@@ -1,3 +1,54 @@
+/* Add this media query to adjust the layout for mobile devices */
+@media only screen and (max-width: 600px) {
+  /* Adjust the background image */
+  body {
+    background-image: url(https://i.gifer.com/76YS.gif);
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Adjust the banner behind "Meet the President" */
+  .h::before {
+    height: calc(150% + 60px);
+    top: -40px;
+  }
+
+  /* Adjust the headings */
+  .h {
+    font-size: 40px;
+    padding: 40px 0;
+  }
+
+  h1 {
+    font-size: 40px;
+    margin-top: 10%;
+  }
+
+  /* Adjust the image */
+  .photo {
+    width: 200px;
+    height: auto;
+    margin-top: 10%;
+    margin-left: 20%;
+  }
+
+  /* Adjust the Instagram and LinkedIn pics */
+  .content a img {
+    width: 40px;
+    height: auto;
+  }
+
+  /* Adjust the layout of the achievements section */
+  .achievements {
+    font-size: 18px;
+  }
+
+  /* Adjust the layout of the "Our IG" section */
+  .our_ig {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
 body {
     margin: 0%;
     padding: 0%;
