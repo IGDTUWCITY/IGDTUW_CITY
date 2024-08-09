@@ -23,7 +23,7 @@ body::before {
     background-image: url("template_leanin.png");
 
     background-size: cover;
-    background-position: center 50%;
+    background-position: center 30%;
     opacity: 0.4;
 
     /* Adjust opacity as needed */
