@@ -1,5 +1,24 @@
 /* Add this media query to adjust the layout for mobile devices */
 @media only screen and (max-width: 600px) {
+   .logo {
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+  }
+
+  .h {
+    font-size: 30px;
+    padding: 40px 0;
+  }
+
+  .content h2 {
+    font-size: 26px; /* increased font size by 2px */
+  }
+
+  .h::before {
+    height: calc(100% + 15px);
+    top: -20px;
+  }
   /* Adjust the background image */
   body {
     background-image: url(https://i.gifer.com/76YS.gif);
@@ -8,16 +27,16 @@
   }
 
   /* Adjust the banner behind "Meet the President" */
-  .h::before {
+/*   .h::before {
     height: calc(150% + 60px);
     top: -40px;
-  }
+  } */
 
   /* Adjust the headings */
-  .h {
+/*   .h {
     font-size: 40px;
     padding: 40px 0;
-  }
+  } */
 
   h1 {
     font-size: 40px;
@@ -368,25 +387,5 @@ h3 {
 }
 
 
-@media only screen and (max-width: 600px) {
-  .logo {
-    width: 10px;
-    height: 10px;
-    margin: 10px;
-  }
 
-  .h {
-    font-size: 30px;
-    padding: 40px 0;
-  }
-
-  .content h2 {
-    font-size: 26px; /* increased font size by 2px */
-  }
-
-  .h::before {
-    height: calc(100% + 15px);
-    top: -20px;
-  }
-}
 }
