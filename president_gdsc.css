@@ -367,24 +367,26 @@ h3 {
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .content h2 {
-    font-size: 40px;
-  }
-}
+
 @media only screen and (max-width: 600px) {
   .logo {
-    width: 10px; /* decrease logo size */
-    height: 10px; /* make it a small square */
-    margin: 10px; /* add some margin to prevent overlapping */
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+  }
+
+  .h {
+    font-size: 30px;
+    padding: 40px 0;
   }
 
   .content h2 {
-    font-size: 24px; /* decrease heading size */
+    font-size: 26px; /* increased font size by 2px */
   }
 
   .h::before {
-    height: calc(100% + 15px); /* decrease background height */
-    top: -20px; /* adjust background position */
+    height: calc(100% + 15px);
+    top: -20px;
   }
+}
 }
