@@ -325,28 +325,7 @@ h3 {
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .h {
-    font-size: 30px;
-    padding: 40px 0;
-  }
-}
 
-.photo {
-  margin-top: 18%;
-  margin-left: 35%;
-  position: absolute;
-  top: 90px;
-  left: 60px;
-  width: 300px; /* adjust width for desktop */
-  height: auto;
-  border-radius: 200px;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5),
-    0 0 30px rgba(255, 255, 255, 0.5),
-    0 0 45px rgba(255, 255, 255, 0.5),
-    0 0 60px rgba(255, 255, 255, 0.5);
-  transition: box-shadow 0.3s ease-in-out;
-}
 
 /* adjust width and margin for tablet and mobile devices */
 @media only screen and (max-width: 1024px) {
@@ -356,14 +335,14 @@ h3 {
   }
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .photo {
     width: 200px;
     margin-left: 15%;
     top: 60px;
     left: 40px;
   }
-}
+} */
 
 .content h2 {
   font-size: 80px; /* adjust font size for desktop */
