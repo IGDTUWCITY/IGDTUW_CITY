@@ -375,7 +375,7 @@ h3 {
 @media only screen and (max-width: 600px) {
   .logo {
     width: 10px; /* decrease logo size */
-    height: 30px; /* make it a small square */
+    height: 10px; /* make it a small square */
     margin: 10px; /* add some margin to prevent overlapping */
   }
 
