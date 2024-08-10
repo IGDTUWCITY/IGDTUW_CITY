@@ -374,13 +374,13 @@ h3 {
 }
 @media only screen and (max-width: 600px) {
   .logo {
-    width: 30px; /* decrease logo size */
+    width: 10px; /* decrease logo size */
     height: 30px; /* make it a small square */
     margin: 10px; /* add some margin to prevent overlapping */
   }
 
   .content h2 {
-    font-size: 14px; /* decrease heading size */
+    font-size: 24px; /* decrease heading size */
   }
 
   .h::before {
