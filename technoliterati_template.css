@@ -221,34 +221,38 @@ a:hover {
 @media screen and (max-width: 600px) {
     /* Adjust the logo size */
     .logo img {
-        width: 20px;
-        height: 20px;
+        width: 50px; /* Adjust as needed to make the logo visible but small */
+        height: 50px;
     }
 
-    /* Make the nav links stack vertically */
+    /* Make the nav links stack vertically and cover the entire width */
     .top-links {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%; /* Ensure it covers the entire width */
         padding: 20px;
-        width: auto;
         background-color: black;
         opacity: 0.65;
         font-family: "Special Elite", system-ui;
         font-weight: 400;
         font-style: normal;
+        box-sizing: border-box; /* Include padding and border in width calculation */
     }
 
     .nav-link {
-        margin-left: 0;
-        margin-bottom: 10px; /* Space between links */
+        margin: 5px 0; /* Space between links, adjust as needed */
         font-size: 1em;
+        width: 100%; /* Ensure the link covers the full width */
+        text-align: center;
+        display: block; /* Ensures the links are displayed as block elements */
     }
 
-    /* Ensure the background image covers the viewport size */
+    /* Ensure the background image covers the entire screen */
     body {
-        background-size: cover;
+        background-size: cover; /* Ensure the background covers the viewport */
         background-position: center;
+        background-attachment: fixed; /* Keep the background fixed during scroll */
     }
 
     /* Style for the back links */
@@ -257,17 +261,23 @@ a:hover {
         justify-content: center;
         flex-wrap: wrap;
         gap: 10px;
+        padding: 10px; /* Padding to ensure the links have some spacing */
+        background-color: black;
     }
 
     .back a {
         margin: 0;
         font-size: 1em;
+        color: white;
+        text-decoration: none;
+        padding: 10px; /* Padding for better click area */
     }
-    
+
     /* Adjust starting text for smaller screens */
     .startingtext {
         font-size: 30px;
         text-align: center;
+        padding: 20px; /* Padding for spacing */
     }
 
     .startingtext h2 {
@@ -280,4 +290,6 @@ a:hover {
         font-size: 20px;
     }
 }
+
+
 
