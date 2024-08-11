@@ -186,3 +186,46 @@ h3 {
     color: rgb(255, 255, 255);
     background-color: rgb(9, 6, 6);
 }
+/* Existing styles... (No changes to the original code) */
+
+/* Media Query for screens less than 600px */
+@media screen and (max-width: 600px) {
+    .logo {
+        width: 12px;
+        height: 12px;
+    }
+
+    .photo {
+        width: 150px; /* Decrease the photo size */
+        margin-top: 10px; /* Adjust spacing */
+    }
+
+    .content {
+        font-size: 20px; /* Decrease font size */
+        margin-top: 30px; /* Adjust spacing */
+    }
+
+    .h {
+        padding: 50px 0; /* Adjust padding */
+        color: yellow; /* Keep color */
+    }
+
+    h1 {
+        font-size: 40px; /* Decrease font size */
+        margin-top: 10%; /* Adjust margin */
+    }
+
+    h3 {
+        font-size: 50px; /* Decrease font size */
+    }
+
+    .back {
+        font-size: medium; /* Adjust font size */
+        padding: 8px; /* Adjust padding */
+    }
+
+    .our_ig {
+        font-size: 20px; /* Decrease font size */
+        padding: 8px; /* Adjust padding */
+    }
+}
