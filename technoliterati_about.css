@@ -239,3 +239,48 @@ body{
     color:rgb(255, 255, 255);
     background-color: black;
 }
+/* Base styles (Your existing code) */
+
+/* Media Query for screens less than 600px */
+@media screen and (max-width: 600px) {
+    .logo {
+        width: 50px; /* Reduce the logo size */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .heading {
+        padding: 50px 0; /* Reduce padding to make more room for content */
+        background-position: center; /* Center the background image */
+        height: auto; /* Allow height to adjust dynamically */
+        background-size: contain; /* Ensure the entire background image is visible */
+    }
+
+    h2 {
+        font-size: 40px; /* Reduce font size for h2 */
+    }
+
+    h4 {
+        font-size: 20px; /* Reduce font size for h4 */
+    }
+
+    #Primarygoal, #Description, #Contactus {
+        font-size: 20px; /* Reduce font size for section content */
+    }
+
+    #Primarygoal h1, #Description h1, #Contactus h1 {
+        font-size: 30px; /* Adjust heading font size within sections */
+    }
+
+    .titles {
+        font-size: 30px; /* Reduce the font size for titles */
+    }
+
+    .our_ig {
+        font-size: 20px; /* Reduce font size for our_ig class */
+    }
+
+    .back {
+        font-size: medium; /* Adjust font size for the back class */
+        padding: 8px; /* Adjust padding */
+    }
+}
