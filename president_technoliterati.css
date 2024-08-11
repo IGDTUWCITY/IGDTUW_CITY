@@ -209,6 +209,10 @@ h3 {
         padding: 50px 0; /* Adjust padding */
         color: yellow; /* Keep color */
     }
+     .content h2 span {
+        font-size: 30px; /* Reduce font size for span elements within h2 */
+        transition: opacity 0.5s, transform 0.5s; /* Ensure transitions are maintained */
+    }
 
     h1 {
         font-size: 40px; /* Decrease font size */
