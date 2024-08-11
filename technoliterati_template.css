@@ -218,62 +218,66 @@ a:hover {
     color: rgb(95, 95, 229);
     background-color: rgba(0, 0, 0, 0.8);
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
+    /* Adjust the logo size */
     .logo img {
-        width: 12px;
-        height: 12px;
-        margin-left: 10px;
+        width: 20px;
+        height: 20px;
     }
 
+    /* Make the nav links stack vertically */
     .top-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 20px;
-        width: 100%;
-        padding-left: 0;
-        text-align: center;
-        margin-top: 20px; /* Adds space below the logo */
+        width: auto;
+        background-color: black;
+        opacity: 0.65;
+        font-family: "Special Elite", system-ui;
+        font-weight: 400;
+        font-style: normal;
     }
 
     .nav-link {
-        display: block;
         margin-left: 0;
-        margin-bottom: 10px;
-        font-size: larger;
+        margin-bottom: 10px; /* Space between links */
+        font-size: 1em;
     }
 
-    .startingtext h2 {
-        font-size: 70px;
-        text-align: center;
+    /* Ensure the background image covers the viewport size */
+    body {
+        background-size: cover;
+        background-position: center;
     }
 
-    .startingtext h1,
-    .startingtext p {
+    /* Style for the back links */
+    .back {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .back a {
+        margin: 0;
+        font-size: 1em;
+    }
+    
+    /* Adjust starting text for smaller screens */
+    .startingtext {
         font-size: 30px;
         text-align: center;
     }
 
-    body {
-        background-size: cover;
+    .startingtext h2 {
+        font-size: 60px;
+        text-align: center;
+        margin-right: 0;
     }
 
-    body::before {
-        background-size: cover;
-        background-position: center;
-        opacity: 0.6;
-    }
-
-    .back a {
-        display: block;
-        margin: 10px 0;
-    }
-    
-    .logo {
-        position: relative;
-        z-index: 2;
-    }
-    
-    .top-links {
-        position: relative;
-        z-index: 1;
-        margin-top: 50px; /* Ensures the links are pushed down below the logo */
+    .startingtext p {
+        font-size: 20px;
     }
 }
+
