@@ -22,6 +22,57 @@
     background-image: linear-gradient(to bottom, #f7f7f7, #fff);
     background-size: 100% 100%;
   }
+  @media only screen and (max-width: 600px) {
+    /* Adjust the banner behind "Meet the President" */
+    .h {
+        font-size: 30px; /* Smaller font size */
+        padding: 20px 0; /* Reduce padding */
+        background-size: cover; /* Ensure background fits nicely */
+    }
+
+    .h::before {
+        height: calc(150% + 30px); /* Adjust height to fit smaller screens */
+        top: -20px; /* Adjust top positioning */
+    }
+
+    /* Adjust the logo size */
+    .logo {
+        width: 10px; /* Make logo smaller */
+        height: 10px; /* Maintain square aspect ratio */
+        top: 10px; /* Adjust top position to prevent overlap */
+        left: 10px; /* Adjust left position to prevent overlap */
+    }
+
+    /* Adjust the image */
+    .photo {
+        width: 150px; /* Smaller image size */
+        margin-left: 10%; /* Center image better */
+        margin-top: 5%; /* Adjust top margin */
+        top: 60px; /* Adjust positioning */
+        left: 30px; /* Adjust positioning */
+    }
+
+    /* Adjust the font size for the content */
+    .content h2 {
+        font-size: 30px; /* Smaller font size */
+        letter-spacing: 1px; /* Adjust letter spacing */
+    }
+
+    /* Further adjustments if necessary */
+    .content {
+        font-size: 14px; /* Make text smaller */
+    }
+
+    .achievements {
+        font-size: 14px; /* Adjust font size for achievements section */
+    }
+
+    .our_ig {
+        font-size: 16px; /* Adjust font size for "Our IG" section */
+        padding: 5px; /* Adjust padding */
+    }
+}
+
 }
 
 body {
