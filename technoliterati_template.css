@@ -218,3 +218,62 @@ a:hover {
     color: rgb(95, 95, 229);
     background-color: rgba(0, 0, 0, 0.8);
 }
+@media (max-width: 600px) {
+    .logo img {
+        width: 12px;
+        height: 12px;
+        margin-left: 10px;
+    }
+
+    .top-links {
+        padding: 20px;
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+        margin-top: 20px; /* Adds space below the logo */
+    }
+
+    .nav-link {
+        display: block;
+        margin-left: 0;
+        margin-bottom: 10px;
+        font-size: larger;
+    }
+
+    .startingtext h2 {
+        font-size: 70px;
+        text-align: center;
+    }
+
+    .startingtext h1,
+    .startingtext p {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    body {
+        background-size: cover;
+    }
+
+    body::before {
+        background-size: cover;
+        background-position: center;
+        opacity: 0.6;
+    }
+
+    .back a {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .logo {
+        position: relative;
+        z-index: 2;
+    }
+    
+    .top-links {
+        position: relative;
+        z-index: 1;
+        margin-top: 50px; /* Ensures the links are pushed down below the logo */
+    }
+}
