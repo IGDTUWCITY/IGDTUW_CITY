@@ -354,13 +354,13 @@ a:hover {
 
     .top-links {
         position: relative; /* Change static to relative */
-        margin-top: 20px; /* Add space above the .top-links section */
+        margin-top: 50px; /* Add space above the .top-links section */
         padding: 20px;
         width: 100%;
         padding-left: 0;
         text-align: center;
         display: block;
-        z-index: 1; /* Ensure it is above .startingtext */
+        z-index: 2; /* Ensure it is above .startingtext */
     }
 
     .nav-link {
@@ -372,12 +372,22 @@ a:hover {
         z-index: 1; /* Keep nav-links above .startingtext */
     }
 
-    .logo {
+/*     .logo {
         position: relative; /* Change static to relative */
         display: block;
         margin: 0 auto;
         text-align: center;
         z-index: 2; /* Ensure logo stays above .startingtext */
+    } */
+.logo {
+        position: static;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+.logo img {
+        width: 60px; /* Increase the size of the logo by 10px from previous value */
+        height: 60px;
     }
 
     .startingtext {
