@@ -1,62 +1,64 @@
-/* General Styles */
+/* .clickable{
+    cursor: pointer;
+    text-align: center;
+}  */
+
 body {
     padding: 0px;
     margin: 0px;
     overflow-x: hidden;
     background-image: url("aarohan.jpg");
+    /* Prevent horizontal scrolling */
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
+
+
 }
 
 body::before {
+
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-image: url("aarohan.jpg");
+
     background-size: contain;
     background-position: center 55%;
     opacity: 0.4;
-    z-index: -1;
-}
 
-/* Back Links */
+    /* Adjust opacity as needed */
+    z-index: -1;
+    /* Ensure it stays behind all content */
+}
 .back {
     text-align: center;
     gap: 20px;
-    background-color: black;
-    font-size: larger;
+    background-color: rgb(68, 6, 6);
+    font-size: 20px;
     padding: 0px;
-    z-index: 1;
-    position: relative;
 }
-
-.back a {
+.back a{
     color: white;
     text-decoration: none;
     margin-left: 30px;
 }
 
-.back-link {
-    display: inline-block;
-    margin-left: 20px;
-    font-size: larger;
-    color: white;
-    text-decoration: none;
-    background-color: black;
-    padding: 10px;
-    border-radius: 5px;
-}
 
-.back-link:hover {
-    color: rgb(95, 95, 229);
-    background-color: rgba(0, 0, 0, 0.8);
-}
 
-/* Top Links */
+
+
 .top-links {
+    /* position: absolute; */
+    /* now , the links are taken out from the normal flow of the document, and it is non existent for other elements  */
+    /* we can place this anywhere on the entire page,but in case of postion : relative , we are placing the element acc to its original position in the flow of document */
+    top: 0px;
+    /* moving 20 px down from top edge */
+    right: 200px;
+    /* moving 20 px right from the right edge */
+    /* setting the position of the links */
     background-color: black;
     opacity: 0.65;
     padding: 50px;
@@ -64,12 +66,17 @@ body::before {
     width: 120%;
     text-align: center;
     position: relative;
-    z-index: 0;
+    z-index: 2;
     font-family: "Special Elite", system-ui;
     font-weight: 400;
     font-style: normal;
-    margin-top: 20px; /* Ensures top-links start after back links */
+
+
+
+
 }
+
+
 
 .nav-link {
     text-decoration: none;
@@ -78,10 +85,12 @@ body::before {
     font-size: larger;
     text-align: center;
     margin-left: 50px;
+    /* leaves a space of 10px after every link */
 }
 
 .nav-link::after {
     content: "\25BC";
+    /* Unicode for downward triangle */
     font-size: 0.7em;
     margin-left: 5px;
     position: absolute;
@@ -93,33 +102,43 @@ a:hover {
     color: rgb(95, 95, 229);
     text-decoration: underline;
     width: 30%;
-    font-size: 30px;
+    font-size:30px;
 }
 
-/* Starting Text */
+/* header{
+    background-color: black;
+    padding:0px;
+    width:100px;
+} */
+
 .startingtext {
     color: darkblue;
     font-size: 40px;
     position: relative;
     font-family: "Kalam", cursive;
-}
 
-.startingtext h1 {
-    text-shadow: 1px 1px 1px #919191,
-        1px 2px 1px #919191,
-        1px 3px 1px #919191,
-        1px 4px 1px #919191,
-        1px 5px 1px #919191,
-        1px 6px 1px #919191,
-        1px 7px 1px #919191,
-        1px 8px 1px #919191,
-        1px 9px 1px #919191,
-        1px 10px 1px #919191;
+    /* z-index: 2; */
+    h1 {
+        text-shadow: 1px 1px 1px #919191,
+            1px 2px 1px #919191,
+            1px 3px 1px #919191,
+            1px 4px 1px #919191,
+            1px 5px 1px #919191,
+            1px 6px 1px #919191,
+            1px 7px 1px #919191,
+            1px 8px 1px #919191,
+            1px 9px 1px #919191,
+            1px 10px 1px #919191;
+
+
+    }
+
 }
 
 .startingtext:hover {
     transition: 1s;
     font-size: 50px;
+
 }
 
 .startingtext p {
@@ -136,9 +155,11 @@ a:hover {
         1px 8px 1px #919191,
         1px 9px 1px #919191,
         1px 10px 1px #919191;
+
 }
 
 .startingtext h2 {
+
     color: maroon;
     font-size: 115px;
     text-align: right;
@@ -154,87 +175,46 @@ a:hover {
         1px 8px 1px #919191,
         1px 9px 1px #919191,
         1px 10px 1px #919191;
+
 }
 
-/* Logo */
+
 .logo {
     padding: 5px;
     position: absolute;
     z-index: 3;
 }
 
-.our_ig {
+.our_ig{
     font-family: "Josefin Slab", serif;
     font-size: 30px;
     font-optical-sizing: auto;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color:rgb(255, 255, 255);
     background-color: black;
 }
 
-/* Media Queries */
-@media only screen and (max-width: 600px) {
-    .back {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 10px 0;
-        background-color: black;
-        z-index: 2;
-    }
 
-    .top-links {
-        position: relative;
-        margin-top: 50px; /* Add space above the .top-links section */
-        padding: 20px;
-        width: 100%;
-        padding-left: 0;
-        text-align: center;
-        display: block;
-        z-index: 2;
-    }
+.back{
+    text-align: center;
+    background-color: black;
+    font-size: larger;
+    padding: 0px;
+    text-decoration:none;
+    color:white;
+}
+.back-link {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: larger;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
 
-    .nav-link {
-        margin-left: 0;
-        display: block;
-        padding: 10px 0;
-        margin-bottom: 5px;
-        position: relative;
-        z-index: 1;
-    }
-
-    .logo {
-        position: static;
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .logo img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .startingtext {
-        font-size: 30px;
-        margin-top: 20px;
-        position: relative;
-        z-index: 0;
-    }
-
-    .startingtext h2 {
-        font-size: 80px;
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .startingtext p {
-        font-size: medium;
-    }
-
-    body::before {
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-    }
+.back-link:hover {
+    color: rgb(95, 95, 229);
+    background-color: rgba(0, 0, 0, 0.8);
 }
