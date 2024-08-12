@@ -311,6 +311,7 @@ a:hover {
         margin-left: 0;
         display: block;
         padding: 10px 0;
+        bottom-margin:5px;
         position: static; /* Ensure nav-link does not overlap */
     }
 
@@ -336,7 +337,8 @@ a:hover {
     }
 
     body::before {
-        background-size: contain;
+        background-size: cover;
         background-position: center;
+        background-attachment: fixed;
     }
 }
