@@ -1,156 +1,186 @@
-/* General Styling */
+/* .clickable{
+    cursor: pointer;
+    text-align: center;
+}  */
+
 body {
-    margin: 0%;
-    padding: 0%;
-    background-image: url(https://i.gifer.com/76YS.gif);
-    background-size: cover;
-    background-position: center;
-}
-
-/* Banner Section Styling */
-.h {
-    margin-top: 0%;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
     position: relative;
-    text-align: center;
-    padding: 85px 0;
-    color: yellow;
-    font-size: 60px;
+
+
 }
 
-.h::before {
-    content: '';
-    position: absolute;
-    top: -70px;
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    height: calc(200% + 90px);
-    background-color: rgb(28, 0, 107);
-    opacity: 0.8;
-    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100%;
+    background-image: url("template_gdsc.png");
+
+    background-size: cover;
+    background-position: center 75%;
+    opacity: 0.4;
+
+    /* Adjust opacity as needed */
     z-index: -1;
+    /* Ensure it stays behind all content */
 }
 
-/* Main Heading Styling */
-h1 {
-    margin-top: 6%;
-    font-family: "Spicy Rice", serif;
-    letter-spacing: 3px;
-    word-spacing: 10px;
+
+
+
+
+
+.top-links {
+    /* position: absolute; */
+    /* now , the links are taken out from the normal flow of the document, and it is non existent for other elements  */
+    /* we can place this anywhere on the entire page,but in case of postion : relative , we are placing the element acc to its original position in the flow of document */
+    top: 0px;
+    /* moving 20 px down from top edge */
+    right: 200px;
+    /* moving 20 px right from the right edge */
+    /* setting the position of the links */
+    background-color: black;
+    opacity: 0.65;
+    padding: 50px;
+    padding-left: 20%;
+    width: 120%;
     text-align: center;
-    font-size: 60px;
-    color: white;
-    text-shadow: 0 0 5px #fff, 0 0 10px #181917, 0 0 20px rgb(13, 13, 12),
-                 0 0 30px rgb(229, 234, 208), 0 0 40px rgb(239, 244, 214),
-                 0 0 55px rgb(240, 244, 219), 0 0 70px rgb(22, 22, 22);
+    position: relative;
+    z-index: 2;
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+
+
+
+}
+
+
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+    margin-left: 50px;
+    /* leaves a space of 10px after every link */
+}
+
+.nav-link::after {
+    content: "\25BC";
+    /* Unicode for downward triangle */
+    font-size: 0.7em;
+    margin-left: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+a:hover {
+    color: rgb(95, 95, 229);
+    text-decoration: underline;
+    width: 30%;
+    font-size:30px;
+}
+
+/* header{
+    background-color: black;
+    padding:0px;
+    width:100px;
+} */
+
+.startingtext {
+    color: darkblue;
+    font-size: 40px;
+    position: relative;
+    font-family: "Kalam", cursive;
+
+    /* z-index: 2; */
+    h1 {
+        text-shadow: 1px 1px 1px #919191,
+            1px 2px 1px #919191,
+            1px 3px 1px #919191,
+            1px 4px 1px #919191,
+            1px 5px 1px #919191,
+            1px 6px 1px #919191,
+            1px 7px 1px #919191,
+            1px 8px 1px #919191,
+            1px 9px 1px #919191,
+            1px 10px 1px #919191;
+
+
+    }
+
+}
+
+.startingtext:hover {
+    transition: 1s;
+    font-size: 50px;
+
+}
+
+.startingtext p {
+    color: yellow;
+    font-size: larger;
+    text-align: center;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191;
+
+}
+
+.startingtext h2 {
+
+    color: maroon;
+    font-size: 115px;
+    text-align: right;
+    font-style: italic;
+    margin-right: 2%;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191;
+
+}
+
+
+.logo {
+    padding: 5px;
+    position: absolute;
     z-index: 3;
 }
 
-/* Logo Styling */
-.logo {
-    top: 70px;
-    left: 13px;
-    position: absolute;
-    z-index: 4;
-}
-
-/* Content Section Styling */
-.content {
-    margin-top: 40%;
-    text-align: center;
-    font-family: "Stylish", serif;
-    font-style: italic;
-    font-size: 30px;
-    color: antiquewhite;
-}
-
-.content h2 {
-    font-size: 80px;
-    letter-spacing: 2px;
-    font-family: "Honk", system-ui;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: "MORF" 15, "SHLN" 50;
-    text-align: center;
-}
-
-/* Photo Styling */
-.photo {
-    margin-top: 18%;
-    margin-left: 35%;
-    position: absolute;
-    top: 90px;
-    left: 60px;
-    width: 300px;
-    height: auto;
-    border-radius: 200px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.5),
-                0 0 45px rgba(255, 255, 255, 0.5), 0 0 60px rgba(255, 255, 255, 0.5);
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-/* Achievements Section Styling */
-.achievements {
-    color: hotpink;
-    font-size: 18px;
-}
-
-/* "Our IG" Section Styling */
-.our_ig {
+.our_ig{
     font-family: "Josefin Slab", serif;
-    font-size: 20px;
+    font-size: 30px;
     font-optical-sizing: auto;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color:rgb(255, 255, 255);
     background-color: black;
-    padding: 10px;
 }
 
-/* Hover Effects */
-.content h2 span {
-    display: inline-block;
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.5s, transform 0.5s;
-}
 
-.content h2:hover span {
-    opacity: 0;
-    background-color: rgb(181, 49, 187);
-    transform: translateY(50px);
-}
-
-.content h2:hover span {
-    animation: fadeInUp 0.5s ease forwards;
-}
-
-/* Animation Keyframes */
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Animation Delays */
-.content h2:hover span:nth-child(1) { animation-delay: 0.1s; }
-.content h2:hover span:nth-child(2) { animation-delay: 0.2s; }
-.content h2:hover span:nth-child(3) { animation-delay: 0.3s; }
-.content h2:hover span:nth-child(4) { animation-delay: 0.4s; }
-.content h2:hover span:nth-child(5) { animation-delay: 0.5s; }
-.content h2:hover span:nth-child(6) { animation-delay: 0.6s; }
-.content h2:hover span:nth-child(7) { animation-delay: 0.7s; }
-.content h2:hover span:nth-child(8) { animation-delay: 0.8s; }
-.content h2:hover span:nth-child(9) { animation-delay: 0.9s; }
-.content h2:hover span:nth-child(10) { animation-delay: 1s; }
-.content h2:hover span:nth-child(11) { animation-delay: 1.1s; }
-.content h2:hover span:nth-child(12) { animation-delay: 1.2s; }
-.content h2:hover span:nth-child(13) { animation-delay: 1.3s; }
-.content h2:hover span:nth-child(14) { animation-delay: 1.4s; }
-.content h2:hover span:nth-child(15) { animation-delay: 1.5s; }
-
-/* Back Section Styling */
 .back {
     position: relative;
     text-align: center;
@@ -165,57 +195,4 @@ h1 {
     color: white;
     text-decoration: none;
     word-spacing: 10px;
-}
-
-/* Media Queries for Screens Less Than 600px */
-@media only screen and (max-width: 600px) {
-    /* Adjust the banner */
-    .h {
-        font-size: 30px;
-        padding: 20px 0;
-    }
-
-    .h::before {
-        height: calc(150% + 30px);
-        top: -20px;
-    }
-
-    /* Adjust the logo */
-    .logo {
-        width: 10px;
-        height: 10px;
-        top: 10px;
-        left: 10px;
-    }
-
-    /* Adjust the image */
-    .photo {
-        width: 150px;
-        margin-left: 10%;
-        margin-top: 5%;
-        top: 60px;
-        left: 30px;
-    }
-
-    /* Adjust the content text */
-    .content h2 {
-        font-size: 30px;
-        letter-spacing: 1px;
-    }
-
-    /* Adjust font size for content */
-    .content {
-        font-size: 14px;
-    }
-
-    /* Adjust font size for achievements */
-    .achievements {
-        font-size: 14px;
-    }
-
-    /* Adjust font size for "Our IG" section */
-    .our_ig {
-        font-size: 16px;
-        padding: 5px;
-    }
 }
