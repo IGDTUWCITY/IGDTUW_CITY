@@ -296,7 +296,7 @@ a:hover {
 /* Media query for screens less than 600px */
 
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
     .top-links {
         position: static; /* Remove absolute positioning */
         margin-top: 20px; /* Add space above the .top-links section */
@@ -341,4 +341,66 @@ a:hover {
         background-position: center;
         background-attachment: fixed;
     }
+} */
+@media only screen and (max-width: 600px) {
+    .back {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px 0;
+        background-color: black;
+        z-index: 2;
+    }
+
+    .top-links {
+        position: relative; /* Change static to relative */
+        margin-top: 20px; /* Add space above the .top-links section */
+        padding: 20px;
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+        display: block;
+        z-index: 1; /* Ensure it is above .startingtext */
+    }
+
+    .nav-link {
+        margin-left: 0;
+        display: block;
+        padding: 10px 0;
+        margin-bottom: 5px; /* Adjusted the margin-bottom */
+        position: relative; /* Ensure nav-link does not overlap */
+        z-index: 1; /* Keep nav-links above .startingtext */
+    }
+
+    .logo {
+        position: relative; /* Change static to relative */
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        z-index: 2; /* Ensure logo stays above .startingtext */
+    }
+
+    .startingtext {
+        font-size: 30px;
+        margin-top: 20px; /* Add space above the starting text */
+        position: relative;
+        z-index: 0; /* Ensure it stays behind the top-links and back links */
+    }
+
+    .startingtext h2 {
+        font-size: 80px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .startingtext p {
+        font-size: medium;
+    }
+
+    body::before {
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
 }
+
