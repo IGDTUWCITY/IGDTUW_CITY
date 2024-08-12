@@ -295,13 +295,15 @@ a:hover {
  */
 /* Media query for screens less than 600px */
 
+
 @media only screen and (max-width: 600px) {
     .top-links {
-        right: 0;
+        position: static; /* Remove absolute positioning */
+        margin-top: 20px; /* Add space above the .top-links section */
         padding: 20px;
         width: 100%;
         padding-left: 0;
-        text-align: left;
+        text-align: center;
         display: block;
     }
 
@@ -309,6 +311,7 @@ a:hover {
         margin-left: 0;
         display: block;
         padding: 10px 0;
+        position: static; /* Ensure nav-link does not overlap */
     }
 
     .logo {
@@ -337,4 +340,3 @@ a:hover {
         background-position: center;
     }
 }
-
