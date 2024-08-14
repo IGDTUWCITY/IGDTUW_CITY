@@ -86,3 +86,9 @@ li a {
         font-size: 0.9rem; /* Further adjust list item size for very small screens */
     }
 }
+/* Override font for mobile devices */
+@media only screen and (max-width: 768px) {
+    body {
+        font-family: 'Arial', sans-serif; /* Replace with your preferred mobile font */
+    }
+}
