@@ -241,27 +241,56 @@ a:hover {
  */
 @media screen and (max-width: 600px) {
     /* Adjust logo size and positioning */
-    .logo {
+/*     .logo {
         position: relative;
         z-index: 3;
         display: inline-block;
         vertical-align: middle;
         padding-left: 10px;
-    }
+    } */
 
     .logo img {
         width: 50px; /* Set logo width to 50px */
         height: auto; /* Maintain aspect ratio */
     }
+    .logo {
+        flex-shrink: 0;
+    }
+
+   
 
     /* Adjust top-links styles */
-    .top-links {
-        padding: 10px;
-        width: auto; /* Remove fixed width */
+/*    .top-links {
+        flex-grow: 1;
+        padding-left: 10px;
+        width: auto; 
         text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-top: 0;
+    } */
+
+    /* Adjust nav-link styles */
+    .nav-link {
+        margin: 10px 10px 10px 0;
+        font-size: 16px;
+    }
+
+    /* Adjust nav-link styles */
+/*     .nav-link {
+        margin: 10px 10px 10px 0;
+        font-size: 16px;
         display: inline-block;
-        vertical-align: middle;
-        margin-left: 10px;
+    } */
+    .top-links {
+        flex-grow: 1;
+        padding-left: 10px;
+        width: auto; /* Remove fixed width */
+        text-align: right;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
         margin-top: 0; /* Align with the logo */
     }
 
@@ -269,7 +298,6 @@ a:hover {
     .nav-link {
         margin: 10px 10px 10px 0;
         font-size: 16px;
-        display: inline-block;
     }
 
     /* Ensure body background image fits according to the screen size */
