@@ -287,7 +287,7 @@ a:hover {
         flex-grow: 1;
         padding-left: 10px;
         width: 100%; /* Remove fixed width */
-        text-align: right;
+        text-align: center;
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
