@@ -196,3 +196,47 @@ a:hover {
     text-decoration: none;
     word-spacing: 10px;
 }
+@media screen and (max-width: 600px) {
+    /* Adjust logo size */
+    .logo img {
+        width: 50px; /* Set logo width to 50px */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Adjust top-links styles */
+    .top-links {
+        padding: 10px; /* Reduce padding */
+        padding-left: 0;
+        width: auto; /* Remove fixed width */
+        text-align: left; /* Align text to the left */
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px; /* To avoid overlap with the logo */
+        z-index: 2;
+    }
+
+    /* Adjust nav-link styles */
+    .nav-link {
+        margin: 10px 0;
+        font-size: 20px;
+    }
+
+    /* Ensure body background image fits according to the screen size */
+    body::before {
+        background-position: center;
+        background-size: contain; /* Contain the background image within the screen */
+        height: 100%;
+    }
+
+    /* Adjust the .back styles */
+    .back {
+        font-size: medium;
+        padding: 8px;
+        text-align: left; /* Align the text to the left */
+    }
+
+    .back a {
+        display: block; /* Make links stack vertically */
+        margin-bottom: 5px;
+    }
+}
