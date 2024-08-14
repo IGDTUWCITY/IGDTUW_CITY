@@ -328,6 +328,29 @@ section p{
     }
 
     /* Adjust image and content order for each event */
+/*     .E1, .E2, .E3 {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .E1 img, .E2 img, .E3 img {
+        width: 100%; 
+        border-radius: 20px; 
+    }
+
+    span.E1, span.E2, span.E3 {
+        display: block;
+        width: 100%;
+        margin-top: 20px; 
+        border-radius: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+    } */
+
+    /* Adjust section headings and paragraphs */
+    /* Adjust image and content order for each event */
     .E1, .E2, .E3 {
         display: flex;
         flex-direction: column; /* Stack image above content */
@@ -338,6 +361,7 @@ section p{
     .E1 img, .E2 img, .E3 img {
         width: 100%; /* Full width of the container */
         border-radius: 20px; /* Adjust border-radius for smaller screens */
+        order: -1; /* Place the image above the text */
     }
 
     span.E1, span.E2, span.E3 {
@@ -348,8 +372,6 @@ section p{
         padding: 20px;
         box-sizing: border-box;
     }
-
-    /* Adjust section headings and paragraphs */
     section h2 {
         font-size: 24px;
     }
