@@ -239,39 +239,33 @@ a:hover {
     }
 }
  */
-@media screen and (max-width: 600px) {
-    /* Adjust logo size and positioning */
-/*     .logo {
-        position: relative;
-        z-index: 3;
-        display: inline-block;
-        vertical-align: middle;
-        padding-left: 10px;
-    } */
+/* @media screen and (max-width: 600px) {
+    
+
 
     .logo img {
-        width: 50px; /* Set logo width to 50px */
-        height: auto; /* Maintain aspect ratio */
+        width: 50px; 
+        height: auto; 
     }
     .logo {
         flex-shrink: 0;
     }
    
 
-    /* Update top-links to align to the right and cover full width */
+
     .top-links {
         flex-grow: 1;
         padding: 10px;
         padding-left: 0;
-        width: 100%; /* Ensure full-width coverage */
-        text-align: right; /* Align links to the right */
+        width: 100%; 
+        text-align: right; 
         display: flex;
         flex-direction: row;
-        justify-content: flex-end; /* Right alignment */
+        justify-content: flex-end; 
         margin-top: 0;
     }
 
-    /* Adjust nav-link styles for smaller screens */
+  
     .nav-link {
         margin: 0 10px;
         font-size: 16px;
@@ -279,53 +273,67 @@ a:hover {
 
    
 
-    /* Adjust top-links styles */
-/*    .top-links {
-        flex-grow: 1;
-        padding-left: 10px;
-        width: auto; 
-        text-align: left;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        margin-top: 0;
-    } */
+    
 
-    /* Adjust nav-link styles */
+
+
     .nav-link {
         margin: 0 10px;
         font-size: 16px;
     }
 
-    /* Adjust nav-link styles */
-/*     .nav-link {
-        margin: 10px 10px 10px 0;
-        font-size: 16px;
-        display: inline-block;
-    } */
-/*     .top-links {
-        flex-grow: 1;
-        padding-left: 10px;
-        width: 100%; 
+
+
+
+    body::before {
+        background-position: center;
+        background-size: contain; 
+        height: 100%;
+    }
+
+    .back {
+        font-size: medium;
+        padding: 8px;
         text-align: center;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        margin-top: 0; 
-    } */
+        justify-content: space-around;
+    }
 
-    /* Adjust nav-link styles */
-/*     .nav-link {
-        align: right;
-        margin: 10px 10px 10px 0;
-        font-size: 16px;
-        width: 100%;
-    } */
+    .back a {
+        display: inline-block; /* Display links in a row */
+        margin: 0 5px;
+    }
+} */
+@media screen and (max-width: 600px) {
+
+    /* Adjust logo size and positioning */
+    .logo img {
+        width: 50px;
+        height: auto;
+    }
+
+    /* Update top-links to align to the center and make the links visible */
+    .top-links {
+        padding: 10px;
+        width: 100%; /* Ensure full-width coverage */
+        text-align: center; /* Center align links */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center alignment */
+        align-items: center;
+        margin-top: 0;
+    }
+
+    /* Adjust nav-link styles for smaller screens */
+    .nav-link {
+        margin: 5px 0;
+        font-size: 18px;
+    }
 
     /* Ensure body background image fits according to the screen size */
     body::before {
         background-position: center;
-        background-size: contain; /* Contain the background image within the screen */
+        background-size: contain;
         height: 100%;
     }
 
@@ -339,7 +347,7 @@ a:hover {
     }
 
     .back a {
-        display: inline-block; /* Display links in a row */
+        display: inline-block;
         margin: 0 5px;
     }
 }
