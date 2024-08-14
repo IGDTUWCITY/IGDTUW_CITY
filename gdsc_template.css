@@ -286,7 +286,7 @@ a:hover {
     .top-links {
         flex-grow: 1;
         padding-left: 10px;
-        width: auto; /* Remove fixed width */
+        width: 100%; /* Remove fixed width */
         text-align: right;
         display: flex;
         flex-wrap: wrap;
