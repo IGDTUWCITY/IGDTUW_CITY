@@ -142,3 +142,83 @@ a:hover {
     bottom: 0;
     left: 0;
 }
+
+
+
+/* for mobile responsiveness */
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .logo img {
+        width: 80px; /* Reduce logo size on smaller screens */
+    }
+
+    h1 {
+        font-size: 24px; /* Smaller heading size on mobile */
+        padding: 5px 20px; /* Adjust padding for mobile */
+    }
+
+    h2 {
+        font-size: 18px; /* Smaller subheading size on mobile */
+        padding: 5px 15px; /* Adjust padding for mobile */
+    }
+
+    .container {
+        width: 100px; /* Smaller container size on mobile */
+    }
+
+    .thumbnail {
+        width: 100%; /* Ensure thumbnails fit within containers */
+    }
+
+    .centered {
+        font-size: 12px; /* Smaller font size for text in the centered div */
+        width: 95%; /* Adjust width to fit better on mobile screens */
+    }
+
+    .updates-button {
+        top: 10px; /* Adjust button position on mobile */
+        right: 10px;
+        padding: 8px;
+        font-size: 14px; /* Smaller font size for button */
+    }
+
+    .our_ig {
+        font-size: 20px; /* Smaller font size for the footer */
+        padding: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 60px; /* Further reduce logo size on very small screens */
+    }
+
+    h1 {
+        font-size: 20px; /* Even smaller heading size on very small screens */
+        padding: 5px 10px;
+    }
+
+    h2 {
+        font-size: 16px; /* Even smaller subheading size */
+        padding: 5px 5px;
+    }
+
+    .container {
+        width: 80px; /* Further reduce container size */
+    }
+
+    .centered {
+        font-size: 10px; /* Even smaller font size for text */
+    }
+
+    .updates-button {
+        font-size: 12px; /* Smaller font size for button on very small screens */
+        padding: 6px;
+    }
+
+    .our_ig {
+        font-size: 16px; /* Even smaller font size for the footer */
+        padding: 5px 0;
+    }
+}
+
