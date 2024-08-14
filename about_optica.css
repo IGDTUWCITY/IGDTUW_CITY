@@ -2,9 +2,9 @@
     position: relative;
     padding: 100px 0;
     background-image: url("optica.png");
-background-size: contain;
+background-size: cover;
 
-background-position: center 80%; /* This line is changed */
+background-position: center 30%; /* This line is changed */
 height: 300px; /* Add a fixed height */
 overflow: hidden; /* Hide any overflow */
     
@@ -24,7 +24,7 @@ overflow: hidden; /* Hide any overflow */
         z-index: 1;
     }
 
-    h2{
+    .heading h2{
 
         /* font-family: "Alfa Slab One", serif;
         font-weight: 400;
