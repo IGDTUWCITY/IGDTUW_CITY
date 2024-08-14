@@ -196,8 +196,59 @@ a:hover {
     text-decoration: none;
     word-spacing: 10px;
 }
+/* @media screen and (max-width: 600px) {
+
+    .logo img {
+        width: 50px;
+        height: auto;
+    }
+
+    .top-links {
+        padding: 10px; 
+        padding-left: 0;
+        width: auto; 
+        text-align: left; 
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px; 
+        z-index: 2;
+    }
+
+  
+    .nav-link {
+        margin: 10px 0;
+        font-size: 20px;
+    }
+
+   
+    body::before {
+        background-position: center;
+        background-size: contain; 
+        height: 100%;
+    }
+
+    .back {
+        font-size: medium;
+        padding: 8px;
+        text-align: left; 
+    }
+
+    .back a {
+        display: block; 
+        margin-bottom: 5px;
+    }
+}
+ */
 @media screen and (max-width: 600px) {
-    /* Adjust logo size */
+    /* Adjust logo size and positioning */
+    .logo {
+        position: relative;
+        z-index: 3;
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 10px;
+    }
+
     .logo img {
         width: 50px; /* Set logo width to 50px */
         height: auto; /* Maintain aspect ratio */
@@ -205,20 +256,20 @@ a:hover {
 
     /* Adjust top-links styles */
     .top-links {
-        padding: 10px; /* Reduce padding */
-        padding-left: 0;
+        padding: 10px;
         width: auto; /* Remove fixed width */
-        text-align: left; /* Align text to the left */
-        display: flex;
-        flex-direction: column;
-        margin-top: 60px; /* To avoid overlap with the logo */
-        z-index: 2;
+        text-align: left;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+        margin-top: 0; /* Align with the logo */
     }
 
     /* Adjust nav-link styles */
     .nav-link {
-        margin: 10px 0;
-        font-size: 20px;
+        margin: 10px 10px 10px 0;
+        font-size: 16px;
+        display: inline-block;
     }
 
     /* Ensure body background image fits according to the screen size */
@@ -232,11 +283,13 @@ a:hover {
     .back {
         font-size: medium;
         padding: 8px;
-        text-align: left; /* Align the text to the left */
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
     }
 
     .back a {
-        display: block; /* Make links stack vertically */
-        margin-bottom: 5px;
+        display: inline-block; /* Display links in a row */
+        margin: 0 5px;
     }
 }
