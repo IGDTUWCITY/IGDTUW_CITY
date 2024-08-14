@@ -75,6 +75,14 @@ body::before {
 
 
 }
+.our_ig{
+    font-family: "Josefin Slab", serif;
+    font-size: 30px;
+    font-optical-sizing: auto;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    background-color: black;
+}
 
 
 
