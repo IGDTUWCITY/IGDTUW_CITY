@@ -177,3 +177,94 @@ section h2{
 section p{
     font-family:"Kalam",cursive;
 }
+@media screen and (max-width: 600px) {
+
+    /* Adjust logo size and positioning */
+    .logo {
+        position: relative;
+        width: 80px;
+        top: 0;
+        left: 10px;
+        margin-bottom: 10px;
+        z-index: 2;
+    }
+
+    .logo img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Adjust heading (h1) */
+    .h {
+        font-size: 40px;
+        padding: 30px 0;
+    }
+
+    .h::before {
+        height: auto;
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 36px;
+        padding: 20px;
+    }
+
+    /* Adjust image and content order for each event */
+    .E1, .E2, .E3 {
+        display: flex;
+        flex-direction: column; /* Stack image above content */
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .E1 img, .E2 img, .E3 img {
+        width: 100%; /* Full width of the container */
+        border-radius: 20px; /* Adjust border-radius for smaller screens */
+    }
+
+    span.E1, span.E2, span.E3 {
+        margin: 20px 0 0 0; /* Space between image and text */
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+    /* Adjust back links and social media section */
+    .back {
+        font-size: medium;
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .back a {
+        margin: 5px 0;
+        font-size: 16px;
+    }
+
+    .our_ig {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .our_ig a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Adjust section headings and paragraphs */
+    section h2 {
+        font-size: 24px;
+    }
+
+    section p {
+        font-size: 16px;
+        padding: 0 10px;
+        text-align: center;
+    }
+}
