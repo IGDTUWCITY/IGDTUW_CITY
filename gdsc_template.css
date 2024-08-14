@@ -256,6 +256,26 @@ a:hover {
     .logo {
         flex-shrink: 0;
     }
+   
+
+    /* Update top-links to align to the right and cover full width */
+    .top-links {
+        flex-grow: 1;
+        padding: 10px;
+        padding-left: 0;
+        width: 100%; /* Ensure full-width coverage */
+        text-align: right; /* Align links to the right */
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end; /* Right alignment */
+        margin-top: 0;
+    }
+
+    /* Adjust nav-link styles for smaller screens */
+    .nav-link {
+        margin: 0 10px;
+        font-size: 16px;
+    }
 
    
 
@@ -283,16 +303,16 @@ a:hover {
         font-size: 16px;
         display: inline-block;
     } */
-    .top-links {
+/*     .top-links {
         flex-grow: 1;
         padding-left: 10px;
-        width: 100%; /* Remove fixed width */
+        width: 100%; 
         text-align: center;
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
-        margin-top: 0; /* Align with the logo */
-    }
+        margin-top: 0; 
+    } */
 
     /* Adjust nav-link styles */
     .nav-link {
