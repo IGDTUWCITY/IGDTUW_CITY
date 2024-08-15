@@ -234,7 +234,10 @@ a:hover {
         padding: 8px;
         text-align: center;
     }
-
+.startingtext h2 {
+      font-size: 48px; /* Smaller font size for mobile */ 
+margin-left: 27%;
+}
     .back a {
         display: inline-block;
         margin: 0 5px;

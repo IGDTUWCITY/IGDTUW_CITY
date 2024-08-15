@@ -184,8 +184,8 @@ h3 {
 }
 @media screen and (max-width: 600px) {
     .logo {
-        width: 12px;
-        height: 12px;
+        width: 10px;
+        height: auto;
     }
 
     .photo {

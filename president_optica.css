@@ -16,6 +16,11 @@ body {
         "SHLN" 50;
     text-align: center;
 }
+.logo{
+    position: absolute;
+    z-index: 4;
+}
+
 
 .content h2 span {
     display: inline-block;
@@ -54,6 +59,11 @@ body {
 .content h2:hover span:nth-child(13) { animation-delay: 1.3s; }
 .content h2:hover span:nth-child(14) { animation-delay: 1.4s; }
 .content h2:hover span:nth-child(15) { animation-delay: 1.5s; }
+.content h2:hover span:nth-child(16) { animation-delay: 1.6s; }
+.content h2:hover span:nth-child(17) { animation-delay: 1.7s; }
+.content h2:hover span:nth-child(18) { animation-delay: 1.8s; }
+.content h2:hover span:nth-child(19) { animation-delay: 1.9s; }
+.content h2:hover span:nth-child(20) { animation-delay: 2s; }
 
 .h {
     margin-top: 0%;
@@ -174,21 +184,26 @@ h3 {
     font-optical-sizing: auto;
     text-align: center;
     color: rgb(255, 255, 255);
-    background-color: black;
+    background-color: rgb(9, 6, 6);
 }
-.logo {
-    top: 70px;
-    left: 13px;
-    position: absolute;
-    z-index: 4;
-}
+/* Existing styles... (No changes to the original code) */
+
+/* Media Query for screens less than 600px */
 @media screen and (max-width: 600px) {
     .logo {
-        width: 12px;
-        height: 12px;
+        width: 10px;
+        height: auto;
     }
 
     .photo {
+       
+    height: auto;
+    border-radius: 200px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5),
+        0 0 30px rgba(255, 255, 255, 0.5),
+        0 0 45px rgba(255, 255, 255, 0.5),
+        0 0 60px rgba(255, 255, 255, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
         width: 150px; /* Decrease the photo size */
         margin-top: 10px; /* Adjust spacing */
     }
