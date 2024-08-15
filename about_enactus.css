@@ -1,10 +1,11 @@
+
 .heading{
     position: relative;
     padding: 100px 0;
     background-image: url("about_enactus.png");
 background-size: cover;
 
-background-position: center 50%; /* This line is changed */
+background-position: center 80%; /* This line is changed */
 height: 300px; /* Add a fixed height */
 overflow: hidden; /* Hide any overflow */
     
@@ -121,7 +122,6 @@ color:darkblue;
     font-style: normal;
 }
 #Contactus h1{
-    
 color:darkblue;
     font-family: "Bungee Shade", sans-serif;
 }
@@ -232,7 +232,6 @@ body{
 }
 
 .our_ig{
-    
     font-family: "Josefin Slab", serif;
     font-size: 30px;
     font-optical-sizing: auto;
@@ -240,6 +239,9 @@ body{
     color:rgb(255, 255, 255);
     background-color: black;
 }
+/* Base styles (Your existing code) */
+
+/* Media Query for screens less than 600px */
 @media screen and (max-width: 600px) {
     .logo {
         width: 50px; /* Reduce the logo size */
