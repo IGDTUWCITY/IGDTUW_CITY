@@ -9,8 +9,6 @@ body {
     overflow-x: hidden;
     /* Prevent horizontal scrolling */
     position: relative;
-
-
 }
 
 body::before {
@@ -21,30 +19,17 @@ body::before {
     width: 100%;
     height: 100%;
     background-image: url("templateMsc.png");
-
     background-size: contain;
     background-position: center 75%;
     opacity: 0.4;
-
     /* Adjust opacity as needed */
     z-index: -1;
     /* Ensure it stays behind all content */
 }
 
-
-
-
-
-
 .top-links {
-    /* position: absolute; */
-    /* now , the links are taken out from the normal flow of the document, and it is non existent for other elements  */
-    /* we can place this anywhere on the entire page,but in case of postion : relative , we are placing the element acc to its original position in the flow of document */
     top: 0px;
-    /* moving 20 px down from top edge */
     right: 200px;
-    /* moving 20 px right from the right edge */
-    /* setting the position of the links */
     background-color: black;
     opacity: 0.65;
     padding: 50px;
@@ -56,13 +41,7 @@ body::before {
     font-family: "Special Elite", system-ui;
     font-weight: 400;
     font-style: normal;
-
-
-
-
 }
-
-
 
 .nav-link {
     text-decoration: none;
@@ -71,7 +50,7 @@ body::before {
     font-size: larger;
     text-align: center;
     margin-left: 50px;
-    /* leaves a space of 10px after every link */
+    /* leaves a space of 50px after every link */
 }
 
 .nav-link::after {
@@ -87,8 +66,7 @@ body::before {
 a:hover {
     color: rgb(95, 95, 229);
     text-decoration: underline;
-    width: 30%;
-    font-size:30px;
+    font-size: 30px;
 }
 
 /* header{
@@ -103,7 +81,6 @@ a:hover {
     position: relative;
     font-family: "Kalam", cursive;
 
-    /* z-index: 2; */
     h1 {
         text-shadow: 1px 1px 1px #919191,
             1px 2px 1px #919191,
@@ -115,16 +92,12 @@ a:hover {
             1px 8px 1px #919191,
             1px 9px 1px #919191,
             1px 10px 1px #919191;
-
-
     }
-
 }
 
 .startingtext:hover {
     transition: 1s;
     font-size: 50px;
-
 }
 
 .startingtext p {
@@ -141,17 +114,14 @@ a:hover {
         1px 8px 1px #919191,
         1px 9px 1px #919191,
         1px 10px 1px #919191;
-
 }
 
 .startingtext h2 {
-
-    color: rgb(107, 0, 32);;
+    color: rgb(107, 0, 32);
     font-size: 115px;
     text-align: right;
     font-style: italic;
     margin-right: 2%;
-
     text-shadow: 1px 1px 1px #919191,
         1px 2px 1px #919191,
         1px 3px 1px #919191,
@@ -162,9 +132,7 @@ a:hover {
         1px 8px 1px #919191,
         1px 9px 1px #919191,
         1px 10px 1px #919191;
-
 }
-
 
 .logo {
     padding: 5px;
@@ -172,15 +140,14 @@ a:hover {
     z-index: 3;
 }
 
-.our_ig{
+.our_ig {
     font-family: "Josefin Slab", serif;
     font-size: 30px;
     font-optical-sizing: auto;
     text-align: center;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     background-color: black;
 }
-
 
 .back {
     position: relative;
@@ -197,7 +164,7 @@ a:hover {
     text-decoration: none;
     word-spacing: 10px;
 }
-/* ADDING RESPONSIVENESS */
+
 @media screen and (max-width: 600px) {
     /* Adjust logo size and positioning */
     .logo {
@@ -216,7 +183,7 @@ a:hover {
     /* Adjust top-links styles */
     .top-links {
         padding: 10px;
-        width: 200; /* Remove fixed width */
+        width: auto; /* Remove fixed width */
         text-align: left;
         display: inline-block;
         vertical-align: middle;
@@ -252,4 +219,3 @@ a:hover {
         margin: 0 5px;
     }
 }
-
