@@ -185,7 +185,7 @@ section p{
 
 /* Media Query for screens less than 600px */
 @media screen and (max-width: 600px) {
-    /* Adjust the size of the header and content */
+    /* General adjustments */
     h1 {
         font-size: 35px;
         padding: 50px 0;
@@ -197,7 +197,7 @@ section p{
     }
 
     .logo {
-        width: 50px;
+        width: 100px;
         top: 10px;
         left: 10px;
     }
@@ -213,43 +213,78 @@ section p{
         word-spacing: 5px;
     }
 
-    .E1, .E2, .E3 {
+    /* Section E1 adjustments */
+    .E1 {
         width: 90%;
         height: auto;
         margin: 20px auto;
         border-radius: 20px;
         text-align: center;
         padding: 10px;
+        background-size: cover;
     }
 
-    .E1 img, .E2 img, .E3 img {
+    .E1 img {
         width: 100%;
         border-radius: 20px;
+        margin-bottom: 10px;
     }
 
-    /* Ensure content appears below the image */
-    .E1-content, .E2-content, .E3-content {
+    .E1-content {
         text-align: center;
         padding-top: 10px;
-        display: block;
         margin-top: 10px;
     }
 
-    img.pic1, img.pic2, img.pic3 {
-        width: 100%;
-        margin: 0;
+    /* Section E2 adjustments */
+    .E2 {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
         border-radius: 20px;
+        text-align: center;
+        padding: 10px;
+        background-size: cover;
+    }
+
+    .E2 img {
+        width: 100%;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+
+    .E2-content {
+        text-align: center;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+
+    /* Section E3 adjustments */
+    .E3 {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+        border-radius: 20px;
+        text-align: center;
+        padding: 10px;
+        background-size: cover;
+    }
+
+    .E3 img {
+        width: 100%;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+
+    .E3-content {
+        text-align: center;
+        padding-top: 10px;
+        margin-top: 10px;
     }
 
     .our_ig {
         font-size: 18px;
         padding: 10px 0;
-    }
-
-    /* Adding line break after the image */
-    .E1 img, .E2 img, .E3 img {
-        display: block;
-        margin-bottom: 10px;
     }
 }
 
