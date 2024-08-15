@@ -144,7 +144,8 @@ body {
 }
 @media screen and (max-width: 600px) {
     .logo {
-        width: 50px; /* Reduce the logo size */
-        height: auto; /* Maintain aspect ratio */
+        display: none;
+        width: 0px;
+        
     }
 }
