@@ -180,3 +180,68 @@ section h2{
 section p{
     font-family:"Kalam",cursive;
 }
+/* Default CSS (for screens larger than 600px) */
+/* ... your existing CSS code ... */
+
+/* Media Query for screens less than 600px */
+@media screen and (max-width: 600px) {
+    /* Adjust the size of the header and content */
+    h1 {
+        font-size: 35px;
+        padding: 50px 0;
+        margin-top: 5%;
+        text-shadow: 0 0 3px #df2695,
+                     0 0 6px #181917,
+                     0 0 12px rgb(13, 13, 12),
+                     0 0 15px rgb(229, 234, 208);
+    }
+
+    .logo {
+        width: 100px;
+        top: 10px;
+        left: 10px;
+    }
+
+    .back {
+        font-size: medium;
+        word-spacing: 10px;
+        padding: 5px;
+    }
+
+    .back a {
+        font-size: smaller;
+        word-spacing: 5px;
+    }
+
+    .E1, .E2, .E3 {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+        border-radius: 20px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .E1 {
+        margin-top: 20px;
+    }
+
+    .E2 {
+        margin-top: 40px;
+    }
+
+    .E3 {
+        margin-top: 60px;
+    }
+
+    img.pic1, img.pic2, img.pic3 {
+        width: 100%;
+        margin: 0;
+        border-radius: 20px;
+    }
+
+    .our_ig {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+}
