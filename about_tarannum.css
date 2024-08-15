@@ -1,11 +1,10 @@
-
 .heading{
     position: relative;
     padding: 100px 0;
     background-image: url("tarannum_about.jpeg");
 background-size: cover;
 
-background-position: center 80%; /* This line is changed */
+background-position: center 30%; /* This line is changed */
 height: 300px; /* Add a fixed height */
 overflow: hidden; /* Hide any overflow */
     
@@ -25,7 +24,7 @@ overflow: hidden; /* Hide any overflow */
         z-index: 1;
     }
 
-    h2{
+    .heading h2{
 
         /* font-family: "Alfa Slab One", serif;
         font-weight: 400;
@@ -224,20 +223,11 @@ body{
 
 }
 
-.back {
-    position: relative;
+.back{
     text-align: center;
-    word-spacing: 20px;
-    background-color: rgb(22, 3, 12);
+    background-color: black;
     font-size: larger;
-    padding: 10px;
-    z-index: 4;
-}
-
-.back a {
-    color: white;
-    text-decoration: none;
-    word-spacing: 10px;
+    padding: 0px;
 }
 
 .our_ig{
@@ -247,4 +237,46 @@ body{
     text-align: center;
     color:rgb(255, 255, 255);
     background-color: black;
+}
+@media screen and (max-width: 600px) {
+    .logo {
+        width: 50px; /* Reduce the logo size */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .heading {
+        padding: 50px 0; /* Reduce padding to make more room for content */
+        background-position: center; /* Center the background image */
+        height: auto; /* Allow height to adjust dynamically */
+        background-size: contain; /* Ensure the entire background image is visible */
+    }
+
+    h2 {
+        font-size: 35px; /* Reduce font size for h2 */
+    }
+
+    h4 {
+        font-size: 18px; /* Reduce font size for h4 */
+    }
+
+    #Primarygoal, #Description, #Contactus {
+        font-size: 20px; /* Reduce font size for section content */
+    }
+
+    #Primarygoal h1, #Description h1, #Contactus h1 {
+        font-size: 30px; /* Adjust heading font size within sections */
+    }
+
+    .titles {
+        font-size: 30px; /* Reduce the font size for titles */
+    }
+
+    .our_ig {
+        font-size: 20px; /* Reduce font size for our_ig class */
+    }
+
+    .back {
+        font-size: medium; /* Adjust font size for the back class */
+        padding: 8px; /* Adjust padding */
+    }
 }
