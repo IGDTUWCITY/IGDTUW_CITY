@@ -235,7 +235,7 @@ a:hover {
         text-align: center;
     }
 .startingtext h2 {
-        font-size: 48px; /* Smaller font size for mobile */
+/*         font-size: 48px; /* Smaller font size for mobile */ */
         text-align: center; 
 }
     .back a {
