@@ -192,3 +192,75 @@ a:hover {
     margin-left: 30px;
 }
 
+/* ADDING RESPONSIVENESSSSSSSS */
+/* Existing styles... */
+
+/* Media queries for mobile responsiveness */
+@media screen and (max-width: 600px) {
+
+    /* Reduce logo size on mobile */
+    .logo img {
+        width: 50px;
+        height: auto;
+    }
+
+    /* Stack links vertically and center them on mobile */
+    .top-links {
+        padding: 10px;
+        width: 100%; /* Adjusted to fit within viewport */
+        margin-left: 0px;
+        text-align: center; /* Centered text on mobile */
+        display: block;
+    }
+
+    .nav-link {
+        display: block;
+        margin: 10px auto; /* Centering and spacing on mobile */
+        font-size: 18px;
+        text-align: center;
+        position: relative;
+    }
+
+    .nav-link::after {
+        content: "\25BC";
+        font-size: 0.7em;
+        position: absolute;
+        top: 50%;
+        right: 5px; /* Adjusted alignment of the triangle */
+        transform: translateY(-50%);
+    }
+
+    /* Adjust the .back styles */
+    .back {
+        font-size: medium;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .back a {
+        display: inline-block;
+        margin: 0 5px;
+    }
+
+    /* Adjusting starting text for mobile */
+    .startingtext {
+        font-size: 24px; /* Reduced font size */
+        text-align: center; /* Center-align text on mobile */
+        padding: 0 10px; /* Add padding to prevent text from touching edges */
+    }
+
+    .startingtext h1 {
+        font-size: 32px; /* Adjusted size for mobile */
+    }
+
+    .startingtext p {
+        font-size: 16px; /* Adjusted size for mobile */
+    }
+
+    .startingtext h2 {
+        font-size: 48px; /* Reduced size for mobile */
+        text-align: center; /* Center-align text on mobile */
+        padding: 0 10px; /* Add padding to prevent text from touching edges */
+    }
+}
+
