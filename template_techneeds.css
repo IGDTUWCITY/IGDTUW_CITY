@@ -208,11 +208,7 @@ a:hover {
     /* Stack links vertically and center them on mobile */
     .top-links {
         padding: 10px;
-<<<<<<< HEAD
         width: 200%;
-=======
-        width: 200%; /* Adjusted to fit within viewport */
->>>>>>> 13be56d1b59fd02ab004f2d2cd4ceea07b82e82c
         margin-left: 0px;
         text-align: right;
         display: block;
@@ -249,38 +245,5 @@ margin-left: 27%;
         display: inline-block;
         margin: 0 5px;
     }
-<<<<<<< HEAD
-}
-=======
-
-    /* Adjusting starting text for mobile */
-    .startingtext {
-        font-size: 24px; /* Reduced font size */
-        text-align: center; /* Center-align text on mobile */
-        padding: 0 10px; /* Add padding to prevent text from touching edges */
-
-    }
-
-    .startingtext h1 {
-        font-size: 32px; /* Adjusted size for mobile */
-    }
-
-    .startingtext p {
-        font-size: 16px; /* Adjusted size for mobile */
-    }
-    /* Adjust the .our_ig styles for mobile */
-    .our_ig {
-        font-size: 24px; /* Adjust font size for mobile */
-        padding: 8px 0; /* Adjust padding for mobile */
-    }
-   .startingtext h2 {
-        font-size: 48px; /* Smaller font size for mobile */
-        text-align: center; /* Center-align text */
-        margin: 0 auto; /* Center the heading with auto margins */
-        padding: 0 10px; /* Add padding to prevent text from touching edges */
-        display: block; /* Ensure the heading is a block element */
-    }
 }
 
-
->>>>>>> 13be56d1b59fd02ab004f2d2cd4ceea07b82e82c
