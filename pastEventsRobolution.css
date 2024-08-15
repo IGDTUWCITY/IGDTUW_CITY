@@ -184,73 +184,6 @@ section p{
 /* ... your existing CSS code ... */
 
 /* Media Query for screens less than 600px */
-@media screen and (max-width: 600px) {
-    /* Adjust the back links for small screens */
-    .back {
-        font-size: medium;
-        word-spacing: 5px;
-        padding: 5px;
-    }
-
-    .back a {
-        display: inline-block;
-        margin-right: 5px;
-    }
-
-    /* Adjust the heading for small screens */
-   h1 {
-        font-size: 28px;
-        padding: 20px 0;
-        margin-top: 10%;
-    }
-
-    /* Adjust the logo for small screens */
-    .logo {
-        width: 50px;
-        top: 20px;
-        left: 15px;
-    }
-
-    /* Section E1 adjustments */
-    .E1, .E2, .E3 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin: 20px auto;
-        padding: 10px;
-        border-radius: 20px;
-        text-align: center;
-        background-size: cover;
-    }
-
-    .E1 img, .E2 img, .E3 img {
-        width: 80%;
-        border-radius: 20px;
-        margin-bottom: 10px;
-        left-margin: 0px;
-    }
-
-    .E1 span, .E2 span, .E3 span {
-        width: 90%;
-        margin: 0 auto;
-        padding: 10px;
-        border-radius: 20px;
-        background-size: cover;
-        font-size: 14px;
-        right-margin: 0px;
-    }
-
-    /* Footer adjustments */
-    .our_ig {
-        font-size: 14px;
-        padding: 10px 0;
-    }
-
-    .our_ig img {
-        width: 20px;
-    }
-}
 
 /* General Styles (For larger screens) */
 .our_ig {
@@ -388,6 +321,73 @@ section h2 {
 
 section p {
     font-family: "Kalam", cursive;
+}
+
+@media screen and (max-width: 600px) {
+    /* Adjust the back links for small screens */
+    .back {
+        font-size: medium;
+        word-spacing: 5px;
+        padding: 5px;
+    }
+
+    .back a {
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    /* Adjust the heading for small screens */
+    h1 {
+        font-size: 25px;
+        padding: 10px 0;
+        margin-top: 10px;
+    }
+
+    /* Adjust the logo for small screens */
+    .logo {
+        width: 50px;
+        top: 20px;
+        left: 15px;
+    }
+
+    /* Section E1, E2, E3 adjustments */
+    .E1, .E2, .E3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 20px auto;
+        padding: 10px;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    .E1 img, .E2 img, .E3 img {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+
+    .E1 span, .E2 span, .E3 span {
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+        border-radius: 20px;
+        background: none; /* Remove background image */
+        font-size: 14px;
+        color: black; /* Ensure text is readable without a background */
+    }
+
+    /* Footer adjustments */
+    .our_ig {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+
+    .our_ig img {
+        width: 20px;
+    }
 }
 
 
