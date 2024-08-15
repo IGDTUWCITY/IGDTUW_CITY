@@ -198,15 +198,15 @@ section p{
     }
 
     /* Adjust the heading for small screens */
-    h1 {
-        font-size: 36px;
+   h1 {
+        font-size: 28px;
         padding: 20px 0;
-        margin-top: 20px;
+        margin-top: 10%;
     }
 
     /* Adjust the logo for small screens */
     .logo {
-        width: 100px;
+        width: 50px;
         top: 20px;
         left: 15px;
     }
@@ -228,6 +228,7 @@ section p{
         width: 80%;
         border-radius: 20px;
         margin-bottom: 10px;
+        left-margin: 0px;
     }
 
     .E1 span, .E2 span, .E3 span {
@@ -237,6 +238,7 @@ section p{
         border-radius: 20px;
         background-size: cover;
         font-size: 14px;
+        right-margin: 0px;
     }
 
     /* Footer adjustments */
