@@ -207,7 +207,7 @@ a:hover {
     /* Stack links vertically and center them on mobile */
     .top-links {
         padding: 10px;
-        width: 100%; /* Adjusted to fit within viewport */
+        width: 200%; /* Adjusted to fit within viewport */
         margin-left: 0px;
         text-align: center; /* Centered text on mobile */
         display: block;
@@ -256,11 +256,16 @@ a:hover {
     .startingtext p {
         font-size: 16px; /* Adjusted size for mobile */
     }
-
+    /* Adjust the .our_ig styles for mobile */
+    .our_ig {
+        font-size: 24px; /* Adjust font size for mobile */
+        padding: 8px 0; /* Adjust padding for mobile */
+    }
     .startingtext h2 {
         font-size: 48px; /* Reduced size for mobile */
         text-align: center; /* Center-align text on mobile */
         padding: 0 10px; /* Add padding to prevent text from touching edges */
     }
 }
+
 
