@@ -1,11 +1,8 @@
 body {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://i.gifer.com/76YS.gif);
 }
-
-
-
-
 
 .content h2 {
     font-size: 80px;
@@ -19,6 +16,11 @@ body {
         "SHLN" 50;
     text-align: center;
 }
+.logo{
+    position: absolute;
+    z-index: 4;
+}
+
 
 .content h2 span {
     display: inline-block;
@@ -31,9 +33,6 @@ body {
     opacity: 0;
     background-color: rgb(181, 49, 187);
     transform: translateY(50px);
-}
-
-.content h2:hover span {
     animation: fadeInUp 0.5s ease forwards;
 }
 
@@ -43,6 +42,7 @@ body {
         transform: translateY(0);
     }
 }
+
 /* Animation delays */
 .content h2:hover span:nth-child(1) { animation-delay: 0.1s; }
 .content h2:hover span:nth-child(2) { animation-delay: 0.2s; }
@@ -63,15 +63,14 @@ body {
 .content h2:hover span:nth-child(17) { animation-delay: 1.7s; }
 .content h2:hover span:nth-child(18) { animation-delay: 1.8s; }
 .content h2:hover span:nth-child(19) { animation-delay: 1.9s; }
-
-
-
+.content h2:hover span:nth-child(20) { animation-delay: 2s; }
 
 .h {
     margin-top: 0%;
     position: relative;
     text-align: center;
     padding: 85px 0;
+    color: yellow;
 
 }
 
@@ -83,15 +82,12 @@ body {
     right: 0;
     bottom: 0;
     height: calc(200% + 90px);
-    background-color: rgb(75, 35, 187);
+    background-color: rgb(28, 0, 107);
     opacity: 0.8;
     backdrop-filter: blur(10px);
     /* Adjust the blur intensity */
     z-index: -1;
 }
-
-
-
 
 h1 {
     margin-top: 6%;
@@ -99,7 +95,6 @@ h1 {
     letter-spacing: 3px;
     word-spacing: 10px;
     text-align: center;
-    /* text-decoration: underline; */
     font-size: 60px;
     color: white;
     text-shadow: 0 0 5px #fff,
@@ -110,50 +105,20 @@ h1 {
         0 0 55px rgb(240, 244, 219),
         0 0 70px rgb(22, 22, 22);
     z-index: 3;
-    /* background-color: rgb(209, 24, 184); */
-    /* opacity: 0.5; */
 }
 
-/* 
 .parent {
-    /* position: relative;
-    display: flex; */
-/* justify-content: center;
-    align-items: center; */
-/* margin-top: 50px;
-    width: 500px;
-    /* Optional: adjust as needed */
-
-
-/* } */
-
-.content {
-    margin-top: 40%;
-    text-align: center;
-    /* font-family:"Protest Revolution", sans-serif;; */
-    font-family: "Stylish", serif;
-    font-style: italic;
-    font-size: 30px;
-    color: antiquewhite;
-
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.first {
-    margin-top: 5%;
-}
-
 
 .photo {
-    margin-top: 18%;
-    margin-left: 35%;
-    position: absolute;
-    top: 90px;
-    left: 60px;
+    margin-top: 20px;
     width: 300px;
-    /* Adjust the size as needed */
     height: auto;
     border-radius: 200px;
-    /* Optional: rounded corners */
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5),
         0 0 30px rgba(255, 255, 255, 0.5),
         0 0 45px rgba(255, 255, 255, 0.5),
@@ -161,7 +126,6 @@ h1 {
     transition: box-shadow 0.3s ease-in-out;
 }
 
-/* Optional: Add hover effect for a dynamic glow */
 .photo:hover {
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.8),
         0 0 50px rgba(255, 255, 255, 0.8),
@@ -169,29 +133,27 @@ h1 {
         0 0 100px rgba(255, 255, 255, 0.8);
 }
 
-body {
-    background-image: url(https://i.gifer.com/76YS.gif);
-    /* z-index: -1; */
+.content {
+    margin-top: 50px;
+    text-align: center;
+    font-family: "Stylish", serif;
+    font-style: italic;
+    font-size: 30px;
+    color: antiquewhite;
 }
 
-.logo {
-    top: 70px;
-    left: 13px;
-    position: absolute;
-    z-index: 4;
+.first {
+    margin-top: 5%;
 }
 
 .achievements {
     color: hotpink;
 }
 
-
-
 h3 {
     font-family: "Honk", system-ui;
-    margin-top: 0px;
+    margin-top: 0;
     font-size: 80px;
-
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -199,7 +161,6 @@ h3 {
         "MORF" 15,
         "SHLN" 50;
 }
-
 
 .back {
     position: relative;
@@ -217,15 +178,17 @@ h3 {
     word-spacing: 10px;
 }
 
-
 .our_ig {
     font-family: "Josefin Slab", serif;
     font-size: 30px;
     font-optical-sizing: auto;
     text-align: center;
     color: rgb(255, 255, 255);
-    background-color: black;
+    background-color: rgb(9, 6, 6);
 }
+/* Existing styles... (No changes to the original code) */
+
+/* Media Query for screens less than 600px */
 @media screen and (max-width: 600px) {
     .logo {
         width: 12px;
