@@ -197,3 +197,59 @@ a:hover {
     text-decoration: none;
     word-spacing: 10px;
 }
+/* ADDING RESPONSIVENESS */
+@media screen and (max-width: 600px) {
+    /* Adjust logo size and positioning */
+    .logo {
+        position: relative;
+        z-index: 3;
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 10px;
+    }
+
+    .logo img {
+        width: 50px; /* Set logo width to 50px */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Adjust top-links styles */
+    .top-links {
+        padding: 10px;
+        width: 200; /* Remove fixed width */
+        text-align: left;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+        margin-top: 0; /* Align with the logo */
+    }
+
+    /* Adjust nav-link styles */
+    .nav-link {
+        margin: 10px 10px 10px 0;
+        font-size: 16px;
+        display: inline-block;
+    }
+
+    /* Ensure body background image fits according to the screen size */
+    body::before {
+        background-position: center;
+        background-size: contain; /* Contain the background image within the screen */
+        height: 100%;
+    }
+
+    /* Adjust the .back styles */
+    .back {
+        font-size: medium;
+        padding: 8px;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .back a {
+        display: inline-block; /* Display links in a row */
+        margin: 0 5px;
+    }
+}
+
