@@ -86,7 +86,7 @@ function getSocietyName(page) {
         "./announcement_optica.html": "Optica",
         "./announcements_leanin.html": "Lean In",
         "./announcement_gdsc.html": "GDSC",
-        "./announcement_techneeds.html": "Techneeds",
+        "./announcement_techneeds.html": "TechNeeds",
         "./announcement_technoliterati.html": "Technoliterati",
         "./minerva_announcement.html": "Minerva",
         "./announcement_hackclub.html": "HackClub",
