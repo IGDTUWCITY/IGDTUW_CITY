@@ -351,3 +351,55 @@ a:hover {
         margin: 0 5px;
     }
 }
+
+/*  adding for responsivenesss  */
+@media screen and (max-width: 600px) {
+
+    /* Adjust logo size and positioning */
+    .logo img {
+        width: 50px;
+        height: auto;
+    }
+
+    /* Update top-links to align to the center and make the links visible */
+    .top-links {
+        padding: 10px;
+        width: 100%; /* Ensure full-width coverage */
+        text-align: center; /* Center align links */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center alignment */
+        align-items: center;
+        margin-top: 0;
+    }
+
+    /* Adjust nav-link styles for smaller screens */
+    .nav-link {
+        margin: 5px 0;
+        font-size: 18px;
+        display: block; /* Ensure links are stacked vertically */
+        text-align: center; /* Center align the text */
+    }
+
+    /* Ensure body background image fits according to the screen size */
+    body::before {
+        background-position: center;
+        background-size: contain;
+        height: 100%;
+    }
+
+    /* Adjust the .back styles */
+    .back {
+        font-size: medium;
+        padding: 8px;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .back a {
+        display: inline-block;
+        margin: 0 5px;
+    }
+}
+
