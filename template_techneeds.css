@@ -247,6 +247,7 @@ a:hover {
         font-size: 24px; /* Reduced font size */
         text-align: center; /* Center-align text on mobile */
         padding: 0 10px; /* Add padding to prevent text from touching edges */
+
     }
 
     .startingtext h1 {
@@ -261,10 +262,12 @@ a:hover {
         font-size: 24px; /* Adjust font size for mobile */
         padding: 8px 0; /* Adjust padding for mobile */
     }
-    .startingtext h2 {
-        font-size: 48px; /* Reduced size for mobile */
-        text-align: center; /* Center-align text on mobile */
+   .startingtext h2 {
+        font-size: 48px; /* Smaller font size for mobile */
+        text-align: center; /* Center-align text */
+        margin: 0 auto; /* Center the heading with auto margins */
         padding: 0 10px; /* Add padding to prevent text from touching edges */
+        display: block; /* Ensure the heading is a block element */
     }
 }
 
