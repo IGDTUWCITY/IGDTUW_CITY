@@ -1,0 +1,213 @@
+html {
+    font-size: 16px; /* Or another value if you prefer */
+  }
+
+
+
+.our_ig {
+    top: 0;
+    font-family: "Josefin Slab", serif;
+    font-size: 30rem;
+    font-optical-sizing: auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+
+
+.back {
+    position: relative;
+    text-align: center;
+    word-spacing: 20rem;
+    background-color: rgb(22, 3, 12);
+    font-size: larger;
+    padding: 10rem;
+    z-index: 4;
+}
+
+.back a {
+    color: white;
+    text-decoration: none;
+    word-spacing: 10rem;
+}
+
+/* 
+h1{
+    background-color:pink;
+    top:10%;
+    text-align: center;
+} */
+
+.h {
+    margin-top: 0%;
+    position: relative;
+    text-align: center;
+    padding: 85rem 0;
+
+}
+
+.h::before {
+    content: '';
+    position: absolute;
+    top: -90;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: calc(185% + 100rem);
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/011/458/175/small/blurred-background-diagonal-stripe-pattern-abstract-dark-blue-gradient-design-line-texture-background-vector.jpg);
+    /* opacity: 0.9; */
+    /* background-size: cover; */
+    /* backdrop-filter: blur(10rem); */
+    /* Adjust the blur intensity */
+    z-index: -1;
+}
+
+
+
+h1 {
+    margin-top: 6%;
+    font-family: "Bungee Shade", sans-serif;
+    letter-spacing: 3rem;
+    word-spacing: 10rem;
+    text-align: center;
+    /* text-decoration: underline; */
+    font-size: 60rem;
+    color: rgba(255, 255, 255, 0.81);
+    text-shadow: 0 0 5rem #df2695,
+        0 0 10rem #181917,
+        0 0 20rem rgb(13, 13, 12),
+        0 0 30rem rgb(229, 234, 208),
+        0 0 40rem rgb(239, 244, 214),
+        0 0 55rem rgb(240, 244, 219),
+        0 0 70rem rgb(22, 22, 22);
+    z-index: 3;
+
+    /* opacity: 0.5; */
+}
+
+.logo {
+    width: 200rem;
+    top: 70rem;
+    left: 13rem;
+    position: absolute;
+    z-index: 4;
+}
+
+
+.pic1 {
+    border-radius: 300rem;
+    height: 500rem;
+}
+
+.pic2 {
+    border-radius: 300rem;
+    margin-left: 900rem;
+}
+
+.pic3 {
+    border-radius: 300rem;
+    height: 500rem;
+}
+
+span.E1 {
+    display: inline-block;
+    /* margin-bottom: 100rem; */
+    margin-top: 50rem;
+    margin-left: 250rem;
+    position: absolute;
+    border: solid black;
+    border-radius: 40rem;
+    /* or block */
+    width: 500rem;
+    /* or any desired width */
+    height: 300rem;
+    text-align: center;
+    /* background-image: url(https://img.freepik.com/free-vector/hand-draw-blue-brush-stroke-watercolor-design_1035-21793.jpg); */
+    /* background-size: 1000; */
+    background-image: url(https://img.freepik.com/premium-vector/white-blue-diagonal-watercolor-brush-strokes-texture-background_278222-3145.jpg);
+    background-position: center;
+}
+
+span.E2{
+    display: inline-block;
+/* background-image: url(https://thumbs.dreamstime.com/b/pink-watercolor-brush-strokes-white-background-abstract-hand-painted-108358286.jpg); */
+    background-position: center;
+    background-image: url(https://img.freepik.com/premium-vector/white-pink-diagonal-watercolor-brush-stroke-texture-background_278222-3117.jpg);
+    position: absolute;
+    left:0;
+    margin-left: 90rem;
+    margin-top: 40rem;
+    border: solid black;
+    /* or block */
+    width: 500rem;
+    border-radius: 40rem;
+    /* or any desired width */
+    height: 300rem;
+    text-align: center;
+}
+span.E3 {
+    display: inline-block;
+    background-image: url(https://img.freepik.com/premium-vector/white-yellow-diagonal-watercolor-brush-stroke-texture-background_278222-3148.jpg);
+    /* margin-bottom: 100rem; */
+    background-position: center;
+    margin-left: 300rem;margin-top: 35rem;
+    position: absolute;
+    border: solid black;
+border-radius: 40rem;
+    /* or block */
+    width: 500rem;
+    /* or any desired width */
+    height: 300rem;
+    background-color: #df2695;
+    text-align: center;
+}
+
+body{
+    background-size: 10000;
+    background-position: center;
+    background-image: url(https://en.idei.club/uploads/posts/2023-06/1686153214_en-idei-club-p-pastel-pink-background-dizain-krasivo-22.jpg);
+    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaFrjJV3Pcxqv62JXkbDtZ4_sTPBOu0ixCiw&usqp=CAU); */
+}
+
+section h2{
+    display: inline;
+    text-align: center;
+    font-family:"Kalam",cursive;
+    color:rgb(99, 13, 0);
+    /* background-color: #edf1f2; */
+    
+    text-decoration: underline;
+}
+
+section p{
+    font-family:"Kalam",cursive;
+}
+
+
+
+
+@media (max-width: 768px) {
+    html {
+      font-size: 14px; /* Base font size for tablets and small screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    html {
+      font-size: 12px; /* Base font size for very small screens */
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
