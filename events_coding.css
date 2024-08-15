@@ -1,13 +1,7 @@
-html {
-    font-size: 16px; /* Or another value if you prefer */
-  }
-
-
-
 .our_ig {
     top: 0;
     font-family: "Josefin Slab", serif;
-    font-size: 30rem;
+    font-size: 30px;
     font-optical-sizing: auto;
     text-align: center;
     color: rgb(255, 255, 255);
@@ -19,17 +13,17 @@ html {
 .back {
     position: relative;
     text-align: center;
-    word-spacing: 20rem;
+    word-spacing: 20px;
     background-color: rgb(22, 3, 12);
     font-size: larger;
-    padding: 10rem;
+    padding: 10px;
     z-index: 4;
 }
 
 .back a {
     color: white;
     text-decoration: none;
-    word-spacing: 10rem;
+    word-spacing: 10px;
 }
 
 /* 
@@ -43,7 +37,7 @@ h1{
     margin-top: 0%;
     position: relative;
     text-align: center;
-    padding: 85rem 0;
+    padding: 85px 0;
 
 }
 
@@ -54,74 +48,73 @@ h1{
     left: 0;
     right: 0;
     bottom: 0;
-    height: calc(185% + 100rem);
+    height: calc(185% + 100px);
     background-image: url(https://static.vecteezy.com/system/resources/thumbnails/011/458/175/small/blurred-background-diagonal-stripe-pattern-abstract-dark-blue-gradient-design-line-texture-background-vector.jpg);
     /* opacity: 0.9; */
     /* background-size: cover; */
-    /* backdrop-filter: blur(10rem); */
+    /* backdrop-filter: blur(10px); */
     /* Adjust the blur intensity */
     z-index: -1;
 }
 
 
 
+
 h1 {
     margin-top: 6%;
     font-family: "Bungee Shade", sans-serif;
-    letter-spacing: 3rem;
-    word-spacing: 10rem;
+    letter-spacing: 3px;
+    word-spacing: 10px;
     text-align: center;
     /* text-decoration: underline; */
-    font-size: 60rem;
+    font-size: 60px;
     color: rgba(255, 255, 255, 0.81);
-    text-shadow: 0 0 5rem #df2695,
-        0 0 10rem #181917,
-        0 0 20rem rgb(13, 13, 12),
-        0 0 30rem rgb(229, 234, 208),
-        0 0 40rem rgb(239, 244, 214),
-        0 0 55rem rgb(240, 244, 219),
-        0 0 70rem rgb(22, 22, 22);
+    text-shadow: 0 0 5px #df2695,
+        0 0 10px #181917,
+        0 0 20px rgb(13, 13, 12),
+        0 0 30px rgb(229, 234, 208),
+        0 0 40px rgb(239, 244, 214),
+        0 0 55px rgb(240, 244, 219),
+        0 0 70px rgb(22, 22, 22);
     z-index: 3;
 
     /* opacity: 0.5; */
 }
 
 .logo {
-    width: 200rem;
-    top: 70rem;
-    left: 13rem;
+    width: 200px;
+    top: 70px;
+    left: 13px;
     position: absolute;
     z-index: 4;
 }
 
 
 .pic1 {
-    border-radius: 300rem;
-    height: 500rem;
+    border-radius: 300px;
 }
 
 .pic2 {
-    border-radius: 300rem;
-    margin-left: 900rem;
+    border-radius: 300px;
+    margin-left: 900px;
 }
 
 .pic3 {
-    border-radius: 300rem;
-    height: 500rem;
+    border-radius: 300px;
 }
 
 span.E1 {
     display: inline-block;
-    /* margin-bottom: 100rem; */
-    margin-top: 50rem;
-    margin-left: 250rem;
+    /* margin-bottom: 100px; */
+    margin-top: 50px;
+    margin-left: 250px;
     position: absolute;
     border: solid black;
-    border-radius: 40rem;
+    border-radius: 40px;
     /* or block */
-    width: 500rem;
+    width: 500px;
     /* or any desired width */
-    height: 300rem;
+    height: 300px;
     text-align: center;
     /* background-image: url(https://img.freepik.com/free-vector/hand-draw-blue-brush-stroke-watercolor-design_1035-21793.jpg); */
     /* background-size: 1000; */
@@ -136,29 +129,29 @@ span.E2{
     background-image: url(https://img.freepik.com/premium-vector/white-pink-diagonal-watercolor-brush-stroke-texture-background_278222-3117.jpg);
     position: absolute;
     left:0;
-    margin-left: 90rem;
-    margin-top: 40rem;
+    margin-left: 90px;
+    margin-top: 40px;
     border: solid black;
     /* or block */
-    width: 500rem;
-    border-radius: 40rem;
+    width: 500px;
+    border-radius: 40px;
     /* or any desired width */
-    height: 300rem;
+    height: 300px;
     text-align: center;
 }
 span.E3 {
     display: inline-block;
     background-image: url(https://img.freepik.com/premium-vector/white-yellow-diagonal-watercolor-brush-stroke-texture-background_278222-3148.jpg);
-    /* margin-bottom: 100rem; */
+    /* margin-bottom: 100px; */
     background-position: center;
-    margin-left: 300rem;margin-top: 35rem;
+    margin-left: 300px;margin-top: 35px;
     position: absolute;
     border: solid black;
-border-radius: 40rem;
+border-radius: 40px;
     /* or block */
-    width: 500rem;
+    width: 500px;
     /* or any desired width */
-    height: 300rem;
+    height: 300px;
     background-color: #df2695;
     text-align: center;
 }
@@ -185,29 +178,12 @@ section p{
 }
 
 
+.exception{
+    margin-bottom:30px;
+    background-color: cornsilk;
+    color:rgb(240, 0, 96);
+    text-align: center;
+    font-family:"Kalam",cursive;
+    font-weight: 700;
 
-
-@media (max-width: 768px) {
-    html {
-      font-size: 14px; /* Base font size for tablets and small screens */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    html {
-      font-size: 12px; /* Base font size for very small screens */
-    }
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
