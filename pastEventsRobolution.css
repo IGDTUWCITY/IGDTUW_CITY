@@ -197,7 +197,7 @@ section p{
     }
 
     .logo {
-        width: 100px;
+        width: 50px;
         top: 10px;
         left: 10px;
     }
@@ -222,16 +222,17 @@ section p{
         padding: 10px;
     }
 
-    .E1 {
-        margin-top: 20px;
+    .E1 img, .E2 img, .E3 img {
+        width: 100%;
+        border-radius: 20px;
     }
 
-    .E2 {
-        margin-top: 40px;
-    }
-
-    .E3 {
-        margin-top: 60px;
+    /* Ensure content appears below the image */
+    .E1-content, .E2-content, .E3-content {
+        text-align: center;
+        padding-top: 10px;
+        display: block;
+        margin-top: 10px;
     }
 
     img.pic1, img.pic2, img.pic3 {
@@ -244,4 +245,11 @@ section p{
         font-size: 18px;
         padding: 10px 0;
     }
+
+    /* Adding line break after the image */
+    .E1 img, .E2 img, .E3 img {
+        display: block;
+        margin-bottom: 10px;
+    }
 }
+
