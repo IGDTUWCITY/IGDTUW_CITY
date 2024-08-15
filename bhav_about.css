@@ -1,14 +1,13 @@
+
 .heading{
-     position: relative;
+    position: relative;
     padding: 100px 0;
     background-image: url("bhav_about.jpeg");
 background-size: cover;
 
-
 background-position: center 80%; /* This line is changed */
 height: 300px; /* Add a fixed height */
-
-overflow: none; /* Hide any overflow */
+overflow: hidden; /* Hide any overflow */
     
 
 }   /* font-family: "Concert One", sans-serif;
@@ -240,6 +239,9 @@ body{
     color:rgb(255, 255, 255);
     background-color: black;
 }
+/* Base styles (Your existing code) */
+
+/* Media Query for screens less than 600px */
 @media screen and (max-width: 600px) {
     .logo {
         width: 50px; /* Reduce the logo size */
