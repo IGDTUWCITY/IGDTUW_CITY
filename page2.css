@@ -1,3 +1,4 @@
+/* General Styles */
 html,
 body {
     height: 100%;
@@ -44,7 +45,13 @@ body::before {
 .logo {
     padding: 5px;
     position: absolute;
+    top: 0;
+    left: 0;
     z-index: 3;
+}
+
+.logo img {
+    width: 100px; /* Default size */
 }
 
 h1 {
@@ -101,7 +108,7 @@ a:hover {
 
 .container {
     position: relative;
-    width: 150px; /* Reduced size */
+    width: 150px; /* Default size */
     margin-bottom: 20px;
     display: inline-block;
     overflow: hidden;  /* This will clip the image when it grows */
@@ -120,7 +127,7 @@ a:hover {
     transform: translate(-50%, -50%) rotate(-3deg);
     font-family: 'Permanent Marker', cursive;
     color: #000;
-    font-size: 14px; /* Slightly smaller font */
+    font-size: 14px; /* Default size */
     text-align: center;
     width: 90%;
     line-height: 1.2;
@@ -143,32 +150,14 @@ a:hover {
     left: 0;
 }
 
-
-
-/* for mobile responsiveness */
-/* Media Queries for Responsive Design */
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .logo {
-        padding: 10px;
-        position: relative; /* Change from absolute to relative positioning */
-        z-index: 3;
-        margin-bottom: 60px; /* Add margin to create space for the heading */
+        width: 60px; /* Reduced size */
     }
 
     .logo img {
-        width: 80px; /* Reduce logo size on smaller screens */
-    }
-
-    .updates-button {
-        top: 20px; /* Adjust button position on mobile */
-        right: 20px;
-        padding: 10px;
-        font-size: 14px; /* Smaller font size for button */
-    }
-
-    .Head {
-        margin-top: 100px; /* Add margin to push heading down */
+        width: 60px; /* Reduced size */
     }
 
     h1 {
@@ -202,23 +191,11 @@ a:hover {
 
 @media (max-width: 480px) {
     .logo {
-        padding: 10px;
-        margin-bottom: 80px; /* Increase margin to ensure no overlap with heading */
+        width: 50px; /* Further reduce logo size on very small screens */
     }
 
     .logo img {
-        width: 60px; /* Further reduce logo size on very small screens */
-    }
-
-    .updates-button {
-        top: 20px; /* Adjust button position */
-        right: 20px;
-        font-size: 12px; /* Smaller font size for button on very small screens */
-        padding: 8px;
-    }
-
-    .Head {
-        margin-top: 120px; /* Increase margin to ensure no overlap */
+        width: 50px; /* Further reduce logo size on very small screens */
     }
 
     h1 {
@@ -232,16 +209,20 @@ a:hover {
     }
 
     .container {
-        width: 80px; /* Further reduce container size */
+        width: 80px; /* Further reduced size */
+    }
+
+    .thumbnail {
+        width: 100%; /* Ensure thumbnails fit within containers */
     }
 
     .centered {
-        font-size: 10px; /* Even smaller font size for text */
+        font-size: 10px; /* Smaller font size for text in the centered div */
+        width: 95%; /* Adjust width to fit better on very small screens */
     }
 
     .our_ig {
-        font-size: 16px; /* Even smaller font size for the footer */
+        font-size: 18px; /* Smaller font size for the footer */
         padding: 5px 0;
     }
 }
-

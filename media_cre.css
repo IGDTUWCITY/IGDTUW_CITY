@@ -1,5 +1,6 @@
+/* Default styles for desktops and laptops */
 body {
-    font-family: 'Kalam',cursive;
+    font-family: 'Kalam', cursive;
     background: url('media_bg.webp') no-repeat center center fixed;
     background-size: cover;
     color: #333;
@@ -14,16 +15,16 @@ body {
 .container {
     background: rgb(244, 236, 236);
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(20, 19, 19, 0);
+    box-shadow: 0 0 10px rgba(20, 19, 19, 0.1);
     max-width: 800px;
     padding: 20px;
     text-align: center;
-    font-size: 30px;
+    font-size: 1.875rem; /* 30px */
 }
 
 h1 {
     color: #ff00f2; /* Hot pink color */
-    font-size: 2.5em;
+    font-size: 2.5rem; /* 2.5em */
     margin-bottom: 20px;
     text-shadow: 0 0 5px #15080f, 0 0 10px #000000, 0 0 15px #1a1015, 0 0 20px #1a1518, 0 0 25px #0d0408;
     animation: glow 1.5s infinite alternate;
@@ -54,14 +55,42 @@ h1 {
 }
 
 .societies-list li:hover {
-    background: #b300a7;
+    background: #b300a7; /* Darker pink */
     cursor: pointer;
     transform: scale(1.05);
 }
 
-a{
+a {
     text-decoration: none;
-    color:white;
-    font-family: 'Kalam',cursive;
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    color: white;
+    font-family: 'Kalam', cursive;
+}
+
+/* Media Queries for Responsive Font Sizing and Font Style */
+@media (max-width: 768px) {
+    body {
+        font-family: 'Arial', sans-serif; /* Font for tablets and mobile devices */
+    }
+
+    .container {
+        font-size: 1.5rem; /* Adjust container font size for smaller screens */
+    }
+
+    h1 {
+        font-size: 2rem; /* Adjust heading size for smaller screens */
+    }
+
+    .societies-list li {
+        font-size: 1rem; /* Adjust list item size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.75rem; /* Further adjust heading size for very small screens */
+    }
+
+    .societies-list li {
+        font-size: 0.9rem; /* Further adjust list item size for very small screens */
+    }
 }

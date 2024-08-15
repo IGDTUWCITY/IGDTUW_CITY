@@ -22,7 +22,6 @@ body {
 }
 
 h1 {
-
     color: #39FF14; /* Neon green color */
     font-size: 2.5em;
     margin-bottom: 20px;
@@ -46,7 +45,7 @@ h1 {
     padding: 0;
 }
 
-.societies-list li  { 
+.societies-list li {
     background: #39FF14; /* Neon green color */
     border-radius: 5px;
     color: rgb(3, 2, 2);
@@ -60,8 +59,35 @@ h1 {
     cursor: pointer;
     transform: scale(1.05);
 }
-a{
+
+a {
     text-decoration: none;
     color: rgb(3, 2, 2);
     border-radius: 5px;
+}
+
+/* Media Queries for Responsive Font Sizing */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Adjust heading size for smaller screens */
+    }
+    .societies-list li {
+        font-size: 1.2rem; /* Adjust list item size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.75rem; /* Further adjust heading size for very small screens */
+    }
+    .societies-list li {
+        font-size: 1rem; /* Further adjust list item size for very small screens */
+    }
+}
+
+/* Override font for mobile devices */
+@media only screen and (max-width: 768px) {
+    body {
+        font-family: 'Arial', sans-serif; /* Mobile font */
+    }
 }

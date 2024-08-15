@@ -22,7 +22,7 @@ body {
 }
 
 h1 {
-    color: #48f1eb; /* Hot pink color */
+    color: #48f1eb; /* Light teal color */
     font-size: 2.5em;
     margin-bottom: 20px;
     text-shadow: 0 0 5px #15080f, 0 0 10px #000000, 0 0 15px #1a1015, 0 0 20px #1a1518, 0 0 25px #0d0408;
@@ -44,8 +44,8 @@ h1 {
     padding: 0;
 }
 
-.societies-list li  {
-    background: #69f5ff;
+.societies-list li {
+    background: #69f5ff; /* Light teal color */
     border-radius: 5px;
     color: #fff;
     margin: 10px 0;
@@ -58,7 +58,34 @@ h1 {
     cursor: pointer;
     transform: scale(1.05);
 }
-a{
+
+a {
     text-decoration: none;
-    color:rgb(10, 0, 149);
+    color: rgb(10, 0, 149);
+}
+
+/* Media Queries for Responsive Font Sizing */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Adjust heading size for smaller screens */
+    }
+    .societies-list li {
+        font-size: 1.2rem; /* Adjust list item size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.75rem; /* Further adjust heading size for very small screens */
+    }
+    .societies-list li {
+        font-size: 1rem; /* Further adjust list item size for very small screens */
+    }
+}
+
+/* Override font for mobile devices */
+@media only screen and (max-width: 768px) {
+    body {
+        font-family: 'Arial', sans-serif; /* Mobile font */
+    }
 }

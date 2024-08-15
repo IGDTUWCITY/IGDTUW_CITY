@@ -4,7 +4,7 @@
     background-image: url("robolutionCore2.png");
 background-size: cover;
 
-background-position: center 80%; /* This line is changed */
+background-position: center 70%; /* This line is changed */
 height: 300px; /* Add a fixed height */
 overflow: hidden; /* Hide any overflow */
     
@@ -24,7 +24,7 @@ overflow: hidden; /* Hide any overflow */
         z-index: 1;
     }
 
-    h2{
+    .heading h2{
 
         /* font-family: "Alfa Slab One", serif;
         font-weight: 400;
@@ -252,11 +252,11 @@ body{
     }
 
     h2 {
-        font-size: 40px; /* Reduce font size for h2 */
+        font-size: 30px; /* Reduce font size for h2 */
     }
 
     h4 {
-        font-size: 20px; /* Reduce font size for h4 */
+        font-size: 18px; /* Reduce font size for h4 */
     }
 
     #Primarygoal, #Description, #Contactus {

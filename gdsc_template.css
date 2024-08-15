@@ -1,8 +1,3 @@
-/* .clickable{
-    cursor: pointer;
-    text-align: center;
-}  */
-
 body {
     padding: 0px;
     margin: 0px;
@@ -196,87 +191,39 @@ a:hover {
     text-decoration: none;
     word-spacing: 10px;
 }
-/* @media screen and (max-width: 600px) {
+/* ADDING RESPONSIVENESSSSSSSS */
+@media screen and (max-width: 600px) {
 
+    /* Reduce logo size on mobile */
     .logo img {
         width: 50px;
         height: auto;
     }
 
-    .top-links {
-        padding: 10px; 
-        padding-left: 0;
-        width: auto; 
-        text-align: left; 
-        display: flex;
-        flex-direction: column;
-        margin-top: 60px; 
-        z-index: 2;
-    }
-
-  
-    .nav-link {
-        margin: 10px 0;
-        font-size: 20px;
-    }
-
-   
-    body::before {
-        background-position: center;
-        background-size: contain; 
-        height: 100%;
-    }
-
-    .back {
-        font-size: medium;
-        padding: 8px;
-        text-align: left; 
-    }
-
-    .back a {
-        display: block; 
-        margin-bottom: 5px;
-    }
-}
- */
-@media screen and (max-width: 600px) {
-    /* Adjust logo size and positioning */
-    .logo {
-        position: relative;
-        z-index: 3;
-        display: inline-block;
-        vertical-align: middle;
-        padding-left: 10px;
-    }
-
-    .logo img {
-        width: 50px; /* Set logo width to 50px */
-        height: auto; /* Maintain aspect ratio */
-    }
-
-    /* Adjust top-links styles */
+    /* Stack links vertically and center them on mobile */
     .top-links {
         padding: 10px;
-        width: auto; /* Remove fixed width */
-        text-align: left;
-        display: inline-block;
-        vertical-align: middle;
-        margin-left: 10px;
-        margin-top: 0; /* Align with the logo */
+        width: 200%;
+        margin-left: 0px;
+        text-align: right;
+        display: block;
     }
 
-    /* Adjust nav-link styles */
     .nav-link {
-        margin: 10px 10px 10px 0;
-        font-size: 16px;
-        display: inline-block;
+        display: block;
+        margin: 10px auto; /* Centering and spacing on mobile */
+        font-size: 18px;
+        text-align: center;
+        position: relative;
     }
 
-    /* Ensure body background image fits according to the screen size */
-    body::before {
-        background-position: center;
-        background-size: contain; /* Contain the background image within the screen */
-        height: 100%;
+    .nav-link::after {
+        content: "\25BC";
+        font-size: 0.7em;
+        position: absolute;
+        top: 50%;
+        right: 5px; /* Adjusting alignment of the triangle */
+        transform: translateY(-50%);
     }
 
     /* Adjust the .back styles */
@@ -284,12 +231,10 @@ a:hover {
         font-size: medium;
         padding: 8px;
         text-align: center;
-        display: flex;
-        justify-content: space-around;
     }
 
     .back a {
-        display: inline-block; /* Display links in a row */
+        display: inline-block;
         margin: 0 5px;
     }
 }
