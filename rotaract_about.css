@@ -1,11 +1,10 @@
-
 .heading{
     position: relative;
     padding: 100px 0;
     background-image: url("rotaract.png");
 background-size: cover;
 
-background-position: center 80%; /* This line is changed */
+background-position: center 30%; /* This line is changed */
 height: 300px; /* Add a fixed height */
 overflow: hidden; /* Hide any overflow */
     
@@ -25,7 +24,7 @@ overflow: hidden; /* Hide any overflow */
         z-index: 1;
     }
 
-    h2{
+    .heading h2{
 
         /* font-family: "Alfa Slab One", serif;
         font-weight: 400;
@@ -239,9 +238,6 @@ body{
     color:rgb(255, 255, 255);
     background-color: black;
 }
-/* Base styles (Your existing code) */
-
-/* Media Query for screens less than 600px */
 @media screen and (max-width: 600px) {
     .logo {
         width: 50px; /* Reduce the logo size */
