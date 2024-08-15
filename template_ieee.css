@@ -236,7 +236,7 @@ a:hover {
     }
 .startingtext h2 {
       font-size: 48px; /* Smaller font size for mobile */ 
-margin-left: 10px;
+margin-left: 20%;
 }
     .back a {
         display: inline-block;
