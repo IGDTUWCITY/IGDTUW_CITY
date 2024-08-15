@@ -1,5 +1,5 @@
 // Array of URLs for each society's announcement page
-const announcementPages = ["./announcements_avira.html", "./announcement_hypnotics.html", "./announcement_innerve.html", "./announcement_igdtuwResource.html", "./bhav_announcement.html", "./announcement_nirvana.html", "./announcement_ai.html", "./announcement_ieee.html", "./announcements_enactus.html", "./announcement_avasa.html", "./announcement_synergy.html", "./announcement_protege.html", "./announcements_rtr.html", "./announcements_soch.html", "./announcement_rooh.html", "./announcementRobolution.html", "./announcement_msc.html", "./announcement_optica.html", "./announcements_leanin.html", "./announcement_gdsc.html", "./announcement_techneeds.html", "./announcement_technoliterati.html", "./minerva_announcement.html", "./announcement_hackclub.html", "./announcement_assert.html", "./announcement_instinct.html", "./announcement_finivesta.html", "./announcement_greensphere.html", "./announcement_accordo.html", "./announcements_ignite.html", "./announcementTaarangana.html", "./announcement_zena.html", "./announcement_rahnuma.html", "./announcement_prekshya.html", "./announcement_coding.html"];
+const announcementPages = ["./announcements_avira.html", "./announcement_hypnotics.html", "./announcement_innerve.html", "./announcement_igdtuwResource.html", "./bhav_announcement.html", "./announcement_nirvana.html", "./announcement_ai.html", "./announcement_ieee.html", "./announcements_enactus.html", "./announcement_avasa.html", "./announcement_synergy.html", "./announcement_protege.html", "./announcements_rtr.html", "./announcements_soch.html", "./announcement_rooh.html", "./announcementRobolution.html", "./announcement_msc.html", "./announcement_optica.html", "./announcements_leanin.html", "./announcement_gdsc.html", "./announcement_techneeds.html", "./announcement_technoliterati.html", "./minerva_announcement.html", "./announcement_hackclub.html", "./announcement_assert.html", "./announcement_instinct.html", "./announcement_finivesta.html", "./announcement_greensphere.html", "./announcement_accordo.html", "./announcements_ignite.html", "./announcementTaarangana.html", "./announcement_zena.html", "./announcement_rahnuma.html", "./announcement_prekshya.html"];
 
 // Function to load announcements from each page
 async function loadAnnouncements() {
@@ -100,7 +100,6 @@ function getSocietyName(page) {
         "./announcement_zena.html": "Zena",
         "./announcement_rahnuma.html": "Rahnuma",
         "./announcement_prekshya.html": "Prekshya"
-        "./announcement_coding.html": "CodeBenders"
     };
 
     return nameMapping[page] || "Unknown Society";
