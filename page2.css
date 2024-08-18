@@ -257,6 +257,7 @@ a:hover {
     top: 10px;
     right: 10px;
     margin: 5px;
+    margin-top: 15px;
 }
 
 .button:hover {
@@ -269,7 +270,7 @@ a:hover {
 }
 
 .updates-button {
-    margin-top : 10px;
+    margin-top : 20px;
     margin-bottom: 20px; /* Add some space between the two buttons */
 }
 
