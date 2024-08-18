@@ -149,6 +149,22 @@ a:hover {
     bottom: 0;
     left: 0;
 }
+.roadmap-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    color: #212529;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.roadmap-button:hover {
+    background-color: #e2e6ea;
+}
+
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
