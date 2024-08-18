@@ -14,7 +14,7 @@
     <link rel="shortcut icon" href="logo.jpeg">
     <link rel="stylesheet" href="page2.css">
     <style>
-        .updates-button {
+/*         .updates-button {
             position: absolute;
             font-family: Georgia, 'Times New Roman', Times, serif;
             top: 20px;
@@ -37,6 +37,67 @@
         .updates-button svg {
             margin-right: 8px;
         }
+
+         .roadmap-button {
+            position: absolute;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            top: 20px;
+            right: 5px;
+            border: 2px solid #000;
+            padding: 10px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            background-color: #f0f0f0;
+            cursor: pointer;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .roadmap-button:hover {
+            background-color: #e0e0e0;
+        }
+
+        .roadmap-button svg {
+            margin-right: 8px;
+        } */
+
+/* Update button styles for vertical stacking */
+.updates-button,
+.roadmap-button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 10px; /* Add space between buttons */
+}
+
+.updates-button:hover,
+.roadmap-button:hover {
+    background-color: #e0e0e0;
+}
+
+.updates-button svg,
+.roadmap-button svg {
+    margin-right: 8px;
+}
+
+/* Adjust position for vertical layout without using a container */
+.updates-button {
+    position: relative; /* Use relative positioning for layout control */
+}
+
+.roadmap-button {
+    position: relative; /* Use relative positioning for layout control */
+}
+
+
     </style>
 </head>
 
@@ -50,7 +111,7 @@
         </svg>
         Updates
     </a>
-    <a href="roadmap.html" class="updates-button">
+    <a href="roadmap.html" class="roadmap-button">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24"
         height="24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
