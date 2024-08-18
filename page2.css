@@ -149,7 +149,7 @@ a:hover {
     bottom: 0;
     left: 0;
 }
-.roadmap-button {
+/* .roadmap-button {
     display: inline-flex;
     align-items: center;
     padding: 10px;
@@ -163,7 +163,7 @@ a:hover {
 
 .roadmap-button:hover {
     background-color: #e2e6ea;
-}
+} */
 
 
 /* Media Queries for Responsive Design */
