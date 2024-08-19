@@ -182,7 +182,7 @@ a:hover {
     }
 
     h2 {
-        font-size: 18px; /* Smaller subheading size on mobile */
+        font-size: 10px; /* Smaller subheading size on mobile */
         padding: 5px 15px; /* Adjust padding for mobile */
     }
 
