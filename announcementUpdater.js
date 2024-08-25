@@ -81,6 +81,7 @@ function getSocietyName(page) {
         "./announcements_rtr.html": "Rotaract",
         "./announcements_soch.html": "Soch",
         "./announcement_rooh.html": "Rooh",
+        "./announcement_coding.html": "CodeBenders",
         "./announcementRobolution.html": "Robolution",
         "./announcement_msc.html": "MSC",
         "./announcement_optica.html": "Optica",
