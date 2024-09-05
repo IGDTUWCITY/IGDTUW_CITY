@@ -66,43 +66,49 @@ async function loadAnnouncements() {
 // Function to extract the society name from the page URL
 function getSocietyName(page) {
     const nameMapping = {
+        "./announcement_techneeds.html": "TechNeeds",
+        "./announcement_rahnuma.html": "Rahnuma",
+        "./announcement_zena.html": "Zena",
         "./announcements_avira.html": "Avira",
         "./announcement_hypnotics.html": "Hypnotics",
+        "./announcement_gdsc.html": "GDSC",
+        "./announcement_synergy.html": "Synergy",
+        "./announcement_prekshya.html": "Prekshya",
+        "./announcement_tarannum.html": "Tarannum",
+        "./announcement_ieee.html": "IEEE",
         "./announcement_innerve.html": "Innerve",
-        "./announcement_igdtuwResource.html": "IGDTUW Resource",
-        "./bhav_announcement.html": "Bhav",
+        "./announcement_msc.html": "MSC",
+        "./announcement_aws.html": "AWS",
+        "./announcement_assert.html": "AssetMerkle",
         "./announcement_nirvana.html": "Nirvana",
         "./announcement_ai.html": "AI Club",
-        "./announcement_ieee.html": "IEEE",
+      
         "./announcements_enactus.html": "Enactus",
         "./announcement_avasa.html": "Avasa",
-        "./announcement_aws.html": "AWS",
-        "./announcement_synergy.html": "Synergy",
+
+   
         "./announcement_protege.html": "Protégé",
         "./announcements_rtr.html": "Rotaract",
         "./announcements_soch.html": "Soch",
         "./announcement_rooh.html": "Rooh",
         "./announcement_coding.html": "CodeBenders",
         "./announcementRobolution.html": "Robolution",
-        "./announcement_msc.html": "MSC",
+
         "./announcement_optica.html": "Optica",
         "./announcements_leanin.html": "Lean In",
-        "./announcement_gdsc.html": "GDSC",
-        "./announcement_techneeds.html": "TechNeeds",
+     
+        "./announcement_igdtuwResource.html": "IGDTUW Resource",
+        "./bhav_announcement.html": "Bhav",
         "./announcement_technoliterati.html": "Technoliterati",
         "./minerva_announcement.html": "Minerva",
         "./announcement_hackclub.html": "HackClub",
-        "./announcement_assert.html": "AssetMerkle",
+
         "./announcement_instinct.html": "Instinct",
         "./announcement_finivesta.html": "Finivesta",
         "./announcement_greensphere.html": "Greensphere",
         "./announcement_accordo.html": "Accordo",
         "./announcements_ignite.html": "Ignite",
-        "./announcementTaarangana.html": "Taarangana",
-        "./announcement_zena.html": "Zena",
-        "./announcement_rahnuma.html": "Rahnuma",
-        "./announcement_prekshya.html": "Prekshya",
-        "./announcement_tarannum.html": "Tarannum"
+        "./announcementTaarangana.html": "Taarangana"
     };
 
     return nameMapping[page] || "Unknown Society";
