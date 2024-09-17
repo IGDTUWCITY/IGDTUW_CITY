@@ -1,5 +1,5 @@
 // Array of URLs for each society's announcement page
-const announcementPages = ["./announcement_techneeds.html", "./announcement_aws.html", "./announcement_tarannum.html", "./announcements_avira.html", "./announcement_hypnotics.html", "./announcement_rahnuma.html", "./announcement_innerve.html", "./announcement_igdtuwResource.html", "./bhav_announcement.html", "./announcement_nirvana.html", "./announcement_ai.html", "./announcement_ieee.html", "./announcements_enactus.html", "./announcement_avasa.html", "./announcement_synergy.html", "./announcement_protege.html", "./announcements_rtr.html", "./announcements_soch.html", "./announcement_rooh.html", "./announcementRobolution.html", "./announcement_msc.html", "./announcement_optica.html", "./announcements_leanin.html", "./announcement_gdsc.html", "./announcement_technoliterati.html", "./minerva_announcement.html", "./announcement_hackclub.html", "./announcement_assert.html", "./announcement_instinct.html", "./announcement_finivesta.html", "./announcement_greensphere.html", "./announcement_accordo.html", "./announcements_ignite.html", "./announcementTaarangana.html", "./announcement_zena.html", "./announcement_coding.html"];
+const announcementPages = ["./announcement_techneeds.html", "./announcement_aws.html", "./announcement_tarannum.html", "./announcements_avira.html", "./announcement_hypnotics.html", "./announcement_rahnuma.html", "./announcement_innerve.html", "./announcement_igdtuwResource.html", "./bhav_announcement.html", "./announcement_nirvana.html", "./announcement_ai.html", "./announcement_ieee.html", "./announcements_enactus.html", "./announcement_avasa.html", "./announcement_synergy.html", "./announcement_protege.html", "./announcements_rtr.html", "./announcements_soch.html", "./announcement_rooh.html", "./announcementRobolution.html", "./announcement_msc.html", "./announcement_optica.html", "./announcements_leanin.html", "./announcement_gdsc.html", "./announcement_technoliterati.html", "./minerva_announcement.html", "./announcement_hackclub.html", "./announcement_prekshya.html", "./announcement_assert.html", "./announcement_instinct.html", "./announcement_finivesta.html", "./announcement_greensphere.html", "./announcement_accordo.html", "./announcements_ignite.html", "./announcementTaarangana.html", "./announcement_zena.html", "./announcement_coding.html"];
 
 // Function to load announcements from each page
 async function loadAnnouncements() {
@@ -82,11 +82,11 @@ function getSocietyName(page) {
         "./announcement_assert.html": "AssetMerkle",
         "./announcement_nirvana.html": "Nirvana",
         "./announcement_ai.html": "AI Club",
-      
+
         "./announcements_enactus.html": "Enactus",
         "./announcement_avasa.html": "Avasa",
 
-   
+
         "./announcement_protege.html": "Protégé",
         "./announcements_rtr.html": "Rotaract",
         "./announcements_soch.html": "Soch",
@@ -96,7 +96,7 @@ function getSocietyName(page) {
 
         "./announcement_optica.html": "Optica",
         "./announcements_leanin.html": "Lean In",
-     
+
         "./announcement_igdtuwResource.html": "IGDTUW Resource",
         "./bhav_announcement.html": "Bhav",
         "./announcement_technoliterati.html": "Technoliterati",
