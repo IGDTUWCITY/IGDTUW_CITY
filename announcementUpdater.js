@@ -66,7 +66,7 @@ async function loadAnnouncements() {
 // Function to extract the society name from the page URL
 function getSocietyName(page) {
     const nameMapping = {
-        "./announcement_protege.html": "Protege",
+        "./announcement_protege.html": "Protégé",
         "./announcement_techneeds.html": "TechNeeds",
         "./announcement_rahnuma.html": "Rahnuma",
         "./announcement_zena.html": "Zena",
