@@ -87,7 +87,7 @@ function getSocietyName(page) {
         "./announcement_avasa.html": "Avasa",
 
 
-        "./announcement_protege.html": "Protégé",
+        "./announcement_protege.html": "Protege",
         "./announcements_rtr.html": "Rotaract",
         "./announcements_soch.html": "Soch",
         "./announcement_rooh.html": "Rooh",
