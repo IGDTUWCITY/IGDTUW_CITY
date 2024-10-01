@@ -58,14 +58,43 @@ body {
     width: 100px; /* Default size */
 }
 /* Responsive adjustments */
-@media (min-width: 768px) {
-    #heading {
-        font-size: 48px; /* Fixed size for larger screens */
-    }
+/* Responsive adjustments for screens up to 768px (tablet and below) */
+@media (max-width: 768px) {
+  #body {
+      margin: 50px 20px; /* Reduce margin for smaller screens */
+      padding: 10px 15px; /* Adjust padding */
+  }
 
-    #start {
-        font-size: 24px;
-    }
+  #heading {
+      font-size: 36px; /* Smaller heading for tablets */
+  }
+
+  #start {
+      font-size: 20px; /* Adjust button font size */
+      padding: 8px 16px; /* Reduce padding for the button */
+  }
+}
+
+/* Responsive adjustments for screens up to 480px (mobile devices) */
+@media (max-width: 480px) {
+  #body {
+      margin: 20px 10px; /* More compact margin for mobile */
+      padding: 8px 12px; /* Tighter padding for mobile */
+  }
+
+  #heading {
+      font-size: 28px; /* Even smaller heading for mobile */
+  }
+
+  #start {
+      font-size: 18px; /* Smaller button font size */
+      padding: 6px 12px; /* Further reduce padding for the button */
+  }
+
+  #image {
+      height: 80px; /* Smaller image for mobile */
+      width: 80px;
+  }
 }
 
 
