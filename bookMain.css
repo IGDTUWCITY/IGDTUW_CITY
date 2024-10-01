@@ -46,6 +46,13 @@ body {
   font-weight: 700;
   font-style: normal;
 }
+
+#start:hover {
+    background-color: #7A5535; /* Change background color */
+    color: #FFFFFF; /* Change text color */
+    transform: scale(1.05); /* Scale up */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
 /* Responsive adjustments */
 @media (min-width: 768px) {
     #heading {
