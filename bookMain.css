@@ -53,6 +53,10 @@ body {
     transform: scale(1.05); /* Scale up */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow */
 }
+
+.logo img {
+    width: 100px; /* Default size */
+}
 /* Responsive adjustments */
 @media (min-width: 768px) {
     #heading {
