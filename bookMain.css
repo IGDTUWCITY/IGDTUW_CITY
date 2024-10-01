@@ -16,6 +16,7 @@ body {
     padding: 15px 30px;
     margin: 200px  500px 0px 350px;
     background-color: CCC4B8;
+
 }
 
 #heading {
@@ -25,6 +26,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+
 }
 
 #igdtuw {
@@ -58,23 +60,17 @@ body {
     width: 100px; /* Default size */
 }
 /* Responsive adjustments */
-/* Responsive adjustments for screens up to 768px (tablet and below) */
-/* Responsive adjustments for screens up to 768px (tablet and below) */
-@media (max-width: 768px) {
-  #body {
-      margin: 5% 10px; /* Adjusted for smaller screens */
-      padding: 8px 15px; /* Adjusted padding */
-      max-width: 90%; /* Use percentage for full width on smaller screens */
-  }
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    #body {
+        width: 90%; /* Extend the box width */
+        margin: 0 auto; /* Center the box */
+        padding: 8px 10px; /* Adjust padding if needed */
+        border: 7px solid #444A36; /* Keep the border */
+        background-color: #CCC4B8; /* Keep the background color */
+    }
 }
 
-/* Responsive adjustments for screens up to 480px (mobile devices) */
-@media (max-width: 480px) {
-  #body {
-      margin: 5% 5px; /* More compact margin for mobile */
-      padding: 6px 10px; /* Tighter padding for mobile */
-      max-width: 90%; /* Full width on mobile */
-  }
-}
 
 
