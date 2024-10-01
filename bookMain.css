@@ -59,30 +59,48 @@ body {
 }
 /* Responsive adjustments */
 @media (max-width: 600px) {
+    body {
+        background-size: cover; /* Ensure background image covers the screen */
+        background-position: center; /* Center the background */
+    }
+
     #image {
-        height: 80px; /* Smaller logo size */
-        width: 80px; /* Smaller logo size */
+        height: 60px; /* Smaller logo size */
+        width: 60px; /* Smaller logo size */
     }
 
     #body {
-        margin: 100px 20px; /* Adjust margins for smaller screens */
-        padding: 10px 15px; /* Reduce padding */
+        margin: 50px 10px; /* Adjust margins for smaller screens */
+        padding: 15px; /* Reduce padding */
         border: 5px solid #444A36; /* Slightly thinner border */
+        background-color: #CCC4B8; /* Set the background color correctly */
+        text-align: center; /* Center text */
     }
 
     #heading {
-        font-size: 32px; /* Smaller font size */
+        font-size: 28px; /* Smaller font size for heading */
+        line-height: 1.2; /* Improve spacing between lines */
     }
 
     #igdtuw {
-        font-weight: 700; /* Make it slightly bolder */
+        font-size: 32px; /* Adjust size for "IGDTUW CITY" */
+        font-weight: 900; /* Keep it bold */
     }
 
     #start {
         font-size: 18px; /* Smaller button font size */
-        padding: 8px 15px; /* Adjust padding */
+        padding: 8px 12px; /* Adjust padding */
+        border: 3px solid #444A36; /* Slightly thinner border */
+        background-color: #9D704D; /* Correct background color */
+        color: #37271B; /* Correct text color */
+    }
+
+    #start:hover {
+        background-color: #7A5535; /* Change background color */
+        color: #FFFFFF; /* Change text color */
+        transform: scale(1.05); /* Scale up */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow */
     }
 }
-
 
 
