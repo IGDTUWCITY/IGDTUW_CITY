@@ -58,14 +58,31 @@ body {
     width: 100px; /* Default size */
 }
 /* Responsive adjustments */
-@media (min-width: 768px) {
+@media (max-width: 600px) {
+    #image {
+        height: 80px; /* Smaller logo size */
+        width: 80px; /* Smaller logo size */
+    }
+
+    #body {
+        margin: 100px 20px; /* Adjust margins for smaller screens */
+        padding: 10px 15px; /* Reduce padding */
+        border: 5px solid #444A36; /* Slightly thinner border */
+    }
+
     #heading {
-        font-size: 48px; /* Fixed size for larger screens */
+        font-size: 32px; /* Smaller font size */
+    }
+
+    #igdtuw {
+        font-weight: 700; /* Make it slightly bolder */
     }
 
     #start {
-        font-size: 24px;
+        font-size: 18px; /* Smaller button font size */
+        padding: 8px 15px; /* Adjust padding */
     }
 }
+
 
 
