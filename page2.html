@@ -115,6 +115,23 @@
     list-style: none; /* Remove default list styling */
 }
 
+/* ========================== */
+#chatbot-icon {
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+#chatbot-icon:hover {
+            background-color: #ffffff; /* Change to a darker blue on hover */
+            transform: scale(1.2); /* Slightly enlarge the button on hover */
+        }
+
+#chatbot {
+    border-radius: 8px;
+}
+
+
     </style>
 </head>
 
@@ -258,6 +275,26 @@
             <a href="https://www.instagram.com/igdtuw_city/"><img src="insta.png" alt="" width="30px"></a>
 
         </div>
+        
+        <!-- ==========making changes today============== -->
+        <!-- Chatbot Icon -->
+<div id="chatbot-icon" onclick="toggleChatbot()" style="position: fixed; bottom: 20px; right: 20px; cursor: pointer;">
+    <img src="chatbot.png" alt="Chatbot" width="50" height="50"/>
+</div>
+
+<!-- Chatbot iframe (Initially hidden) -->
+<iframe id="chatbot" width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/fb33bb09-e252-4e87-a258-5e2b839ad566" style="position: fixed; bottom: 80px; right: 20px; display: none; border: none;"></iframe>
+
+<script>
+    function toggleChatbot() {
+    var chatbot = document.getElementById("chatbot");
+    if (chatbot.style.display === "none") {
+        chatbot.style.display = "block";
+    } else {
+        chatbot.style.display = "none";
+    }
+}
+</script>
 
     </body>
 </html>
