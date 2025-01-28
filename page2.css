@@ -68,7 +68,7 @@ h1 {
     background-color: rgba(25, 25, 35, 0.95); /* Dark gray-blue for a refined backdrop */
     display: inline-block;
     padding: 14px 40px;
-    margin: 20px auto;
+    margin: 10px auto;
     border-radius: 10px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
