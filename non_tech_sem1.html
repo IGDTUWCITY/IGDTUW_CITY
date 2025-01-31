@@ -88,41 +88,99 @@
                 transform: translateY(-50%);
                 transition: left 0.5s;
             }
+            .reset-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.reset-btn:hover {
+    background-color: #004d40;
+}
         </style>
         <script>
             function toggleCompletion(event) {
-                const label = event.target.nextElementSibling;
-                if (event.target.checked) {
-                    label.classList.add('completed');
-                } else {
-                    label.classList.remove('completed');
-                }
-                moveCar();
-            }
-    
-            function moveCar() {
-                const checkboxes = document.querySelectorAll('.roadmap-item input[type="checkbox"]');
-                const car = document.querySelector('.car');
-                let completedCount = 0;
-    
-                checkboxes.forEach(checkbox => {
-                    if (checkbox.checked) {
-                        completedCount++;
-                    }
-                });
-    
-                const totalItems = checkboxes.length;
-                const containerWidth = document.querySelector('.road-container').offsetWidth;
-                const stepWidth = (containerWidth - car.offsetWidth) / totalItems;
-                car.style.left = (completedCount * stepWidth) + 'px';
-            }
-        </script>
+         const checkbox = event.target;
+         const label = checkbox.nextElementSibling;
+         const itemId = checkbox.id;
+     
+         if (checkbox.checked) {
+             label.classList.add('completed');
+         } else {
+             label.classList.remove('completed');
+         }
+         
+         // Save state in localStorage
+         localStorage.setItem(itemId, checkbox.checked);
+     
+         moveCar();
+     }
+     
+     function loadProgress() {
+         const checkboxes = document.querySelectorAll('.roadmap-item input[type="checkbox"]');
+         checkboxes.forEach(checkbox => {
+             const savedState = localStorage.getItem(checkbox.id);
+             if (savedState === 'true') {
+                 checkbox.checked = true;
+                 checkbox.nextElementSibling.classList.add('completed');
+             }
+         });
+         moveCar();
+     }
+     
+     function resetProgress() {
+         const checkboxes = document.querySelectorAll('.roadmap-item input[type="checkbox"]');
+         checkboxes.forEach(checkbox => {
+             checkbox.checked = false;
+             checkbox.nextElementSibling.classList.remove('completed');
+             localStorage.removeItem(checkbox.id);
+         });
+         moveCar();
+     }
+     
+     // Load progress on page load
+     window.onload = loadProgress;
+     
+     
+             function moveCar() {
+                 const checkboxes = document.querySelectorAll('.roadmap-item input[type="checkbox"]');
+                 const car = document.querySelector('.car');
+                 let completedCount = 0;
+     
+                 checkboxes.forEach(checkbox => {
+                     if (checkbox.checked) {
+                         completedCount++;
+                     }
+                 });
+     
+                 const totalItems = checkboxes.length;
+                 const containerWidth = document.querySelector('.road-container').offsetWidth;
+                 const stepWidth = (containerWidth - car.offsetWidth) / totalItems;
+                 car.style.left = (completedCount * stepWidth) + 'px';
+     //             function resetProgress() {
+     //     const checkboxes = document.querySelectorAll('.roadmap-item input[type="checkbox"]');
+     //     checkboxes.forEach(checkbox => {
+     //         checkbox.checked = false;
+     //         checkbox.nextElementSibling.classList.remove('completed');
+     //     });
+     //     moveCar();
+     // }
+     
+             }
+         </script>
     </head>
 <body>
     <div class="container">
         <div class="road-container">
             <img src="car1.webp" alt="Car" class="car">
         </div>
+        <button onclick="resetProgress()" class="reset-btn">Reset Progress</button>
+
         <h1>Non - Technical Branches</h1>
         <h2>DW! We've got your back</h2>
         <h3>1. Placements</h3>
