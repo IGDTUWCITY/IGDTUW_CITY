@@ -89,17 +89,65 @@
             transform: translateY(-50%);
             transition: left 0.5s;
         }
+        .reset-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.reset-btn:hover {
+    background-color: #004d40;
+}
+
     </style>
     <script>
-        function toggleCompletion(event) {
-            const label = event.target.nextElementSibling;
-            if (event.target.checked) {
-                label.classList.add('completed');
-            } else {
-                label.classList.remove('completed');
-            }
-            moveCar();
+       function toggleCompletion(event) {
+    const checkbox = event.target;
+    const label = checkbox.nextElementSibling;
+    const itemId = checkbox.id;
+
+    if (checkbox.checked) {
+        label.classList.add('completed');
+    } else {
+        label.classList.remove('completed');
+    }
+    
+    // Save state in localStorage
+    localStorage.setItem(itemId, checkbox.checked);
+
+    moveCar();
+}
+
+function loadProgress() {
+    const checkboxes = document.querySelectorAll('.roadmap-item input[type="checkbox"]');
+    checkboxes.forEach(checkbox => {
+        const savedState = localStorage.getItem(checkbox.id);
+        if (savedState === 'true') {
+            checkbox.checked = true;
+            checkbox.nextElementSibling.classList.add('completed');
         }
+    });
+    moveCar();
+}
+
+function resetProgress() {
+    const checkboxes = document.querySelectorAll('.roadmap-item input[type="checkbox"]');
+    checkboxes.forEach(checkbox => {
+        checkbox.checked = false;
+        checkbox.nextElementSibling.classList.remove('completed');
+        localStorage.removeItem(checkbox.id);
+    });
+    moveCar();
+}
+
+// Load progress on page load
+window.onload = loadProgress;
+
 
         function moveCar() {
             const checkboxes = document.querySelectorAll('.roadmap-item input[type="checkbox"]');
@@ -116,6 +164,15 @@
             const containerWidth = document.querySelector('.road-container').offsetWidth;
             const stepWidth = (containerWidth - car.offsetWidth) / totalItems;
             car.style.left = (completedCount * stepWidth) + 'px';
+//             function resetProgress() {
+//     const checkboxes = document.querySelectorAll('.roadmap-item input[type="checkbox"]');
+//     checkboxes.forEach(checkbox => {
+//         checkbox.checked = false;
+//         checkbox.nextElementSibling.classList.remove('completed');
+//     });
+//     moveCar();
+// }
+
         }
     </script>
 </head>
@@ -124,6 +181,8 @@
         <div class="road-container">
             <img src="car1.webp" alt="Car" class="car">
         </div>
+        <button onclick="resetProgress()" class="reset-btn">Reset Progress</button>
+
         <h1>Technical Branches</h1>
         <h2>DW! We've got your back</h2>
         <h3>1. Placements</h3>
@@ -157,7 +216,7 @@
             <label for="item7">Do Social Interaction, connect with seniors</label>
         </div>
         <div class="roadmap-item">
-            <input type="checkbox" id="item7" onclick="toggleCompletion(event)">
+            <input type="checkbox" id="item8" onclick="toggleCompletion(event)">
             <label for="item8">Keep checking out IGDTUW CITY's website for regular updates</label>
         </div>
         <!-- <div class="roadmap-item">
